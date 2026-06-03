@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Kochanova Podolog — profesionální podologie v Praze",
+    "description": "Profesionální podologická klinika v Praze. Pedikúra, diabetická noha, biomechanická diagnostika a další. Objednejte se ještě dnes.",
+    "ogTitle": "Kochanova — profesionální podologie",
+    "ogDescription": "Odborná péče o vaše nohy. Personalizovaná podologická léčba s moderní technologií."
+  },
+  "nav": {
+    "landmark": "Hlavní navigace",
+    "home": "Úvod",
+    "services": "Služby",
+    "gallery": "Galerie",
+    "about": "O mně",
+    "contact": "Kontakt",
+    "bookNow": "Objednat se",
+    "openMenu": "Otevřít navigační menu",
+    "closeMenu": "Zavřít navigační menu"
+  },
+  "brand": {
+    "accent": "Kochanova",
+    "name": "Podolog"
+  },
+  "languages": {
+    "label": "Jazyk",
+    "chooser": "Vyberte jazyk",
+    "cs": "Čeština",
+    "ru": "Ruština"
+  },
+  "hero": {
+    "eyebrow": "Profesionální podologie",
+    "titleLine1": "Odborná péče",
+    "titleLine2For": "o vaše",
+    "titleHighlight": "chodidla",
+    "subtitle": "Individualizovaná léčba s pokročilými technologiemi. Vaše pohoda začíná od základu — svěřte se do rukou odborníka.",
+    "bookAppointment": "Objednat termín",
+    "viewServices": "Prohlédnout služby",
+    "heroImageAlt": "Podolog provádí profesionální ošetření chodidel",
+    "statExperience": "Let praxe",
+    "statPatients": "Ošetřených pacientů"
+  },
+  "ambientVideo": {
+    "sectionLabel": "Ukázka prostředí kliniky — dekorativní video bez zvuku",
+    "description": "Dekorativní smyčkové video kliniky, přehrává se automaticky bez ovládacích prvků a bez zvuku."
+  },
+  "services": {
+    "eyebrow": "Služby",
+    "title": "Řešení pro každou potřebu",
+    "subtitle": "Nabízíme široké spektrum podologických výkonů v nejvyšší kvalitě a s moderní technologií.",
+    "chiropody": {
+      "title": "Pedikúra",
+      "desc": "Komplexní ošetření mozolí, kuřích ok a nehtů pro dokonalý stav vašich nohou."
+    },
+    "ingrown": {
+      "title": "Zarůstající nehty",
+      "desc": "Profesionální korekce onychokryptózy s minimálně invazivními technikami."
+    },
+    "diabetic": {
+      "title": "Diabetická noha",
+      "desc": "Specializovaná preventivní péče pro diabetiky s individuálním protokolem."
+    },
+    "biomechanical": {
+      "title": "Biomechanické vyšetření",
+      "desc": "Digitální analýza chůze pro výrobu vložek do obuvi na míru podle vašich potřeb."
+    },
+    "sports": {
+      "title": "Sportovní podologie",
+      "desc": "Prevence a léčba sportovních úrazů nohou pro sportovce všech úrovní."
+    },
+    "aesthetic": {
+      "title": "Estetická podologie",
+      "desc": "Estetické výkony na nohy: mykózy, bradavice a rekonstrukce nehtů."
+    },
+    "viewPriceList": "Zobrazit ceník",
+    "priceListAlt": "Ceník podologických služeb"
+  },
+  "gallery": {
+    "eyebrow": "Galerie",
+    "title": "Uvnitř ordinace",
+    "subtitle": "Pohled do prostředí, kde spojujeme technologii, hygienu a klidný zážitek z každé návštěvy.",
+    "carouselLabel": "Fotogalerie kliniky",
+    "slide1": {
+      "alt": "Profesionální podologické ošetření",
+      "caption": "Pečující přístup"
+    },
+    "slide2": {
+      "alt": "Klinická hygiena a moderní zdravotnické prostředí",
+      "caption": "Klinické standardy"
+    },
+    "slide3": {
+      "alt": "Světlá lékařská konzultační místnost",
+      "caption": "Příjemné prostředí"
+    },
+    "prevSlide": "Předchozí snímek",
+    "nextSlide": "Další snímek"
+  },
+  "about": {
+    "stats": {
+      "experienceValue": "+15 let",
+      "experienceLabel": "Praxe",
+      "licenseValue": "Licencováno",
+      "licenseLabel": "Č. 12345",
+      "hoursValue": "Po–Pá",
+      "hoursLabel": "9:00–20:00"
+    },
+    "eyebrow": "O mně",
+    "title": "Vaše pohoda je moje priorita",
+    "p1": "Jsem licencovaný podolog s více než 15 lety zkušeností v komplexní péči o nohy. Díky dalšímu vzdělávání a zájmu o podologii nabízím léčebné postupy podle nejnovějších poznatků.",
+    "p2": "Věřím, že zdravé nohy jsou základem aktivního a naplňujícího života. Každý pacient dostane individuální plán péče podle svých potřeb.",
+    "p3": "Ordinace je vybavena moderní technikou a dodržuji nejpřísnější hygienické standardy, abyste se při každé návštěvě cítili v bezpečí a pohodlně."
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Objednejte se na termín",
+    "subtitle": "Rád vám pomohu. Napište mi a ozvu se vám co nejdříve.",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-mail",
+    "addressLabel": "Adresa",
+    "phoneValue": "+34 612 345 678",
+    "emailValue": "info@podocare.es",
+    "addressValue": "Příkladná 123, Madrid",
+    "fieldName": "Jméno",
+    "fieldEmail": "E-mail",
+    "fieldMessage": "Zpráva",
+    "placeholderName": "Vaše celé jméno",
+    "placeholderEmail": "vas@email.cz",
+    "placeholderMessage": "Napište, s čím vám mohu pomoci...",
+    "submit": "Odeslat zprávu"
+  },
+  "footer": {
+    "legalNav": "Právní odkazy a zásady",
+    "copyright": "© 2026",
+    "brandAccent": "Podo",
+    "brandRest": "Care.",
+    "rights": "Všechna práva vyhrazena.",
+    "legalNotice": "Právní informace",
+    "privacy": "Ochrana soukromí",
+    "cookies": "Cookies"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Jejda! Stránka nenalezena",
+    "homeLink": "Zpět na úvod"
+  }
+}
