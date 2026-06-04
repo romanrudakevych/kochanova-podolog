@@ -108,6 +108,13 @@
     "p2": "Věřím, že zdravé nohy jsou základem aktivního a naplňujícího života. Každý pacient dostane individuální plán péče podle svých potřeb.",
     "p3": "Ordinace je vybavena moderní technikou a dodržuji nejpřísnější hygienické standardy, abyste se při každé návštěvě cítili v bezpečí a pohodlně."
   },
+  "certificates": {
+    "eyebrow": "Certifikáty",
+    "title": "Odborné certifikace",
+    "listLabel": "Přehled certifikátů",
+    "itemLabel": "Certifikát {{number}}",
+    "openCertificate": "Otevřít certifikát {{number}} v plné velikosti"
+  },
   "contact": {
     "eyebrow": "Kontakt",
     "title": "Objednejte se na termín",
