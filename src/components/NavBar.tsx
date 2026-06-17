@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -41,12 +42,12 @@ const Navbar = () => {
             </a>
           ))}
           <LanguageSwitcher />
-          <a
-            href="#contact"
+          <Link
+            to="/rezervace"
             className="inline-flex h-9 items-center rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-[0_0_20px_-4px_hsl(var(--glass-glow)/0.5)] hover:shadow-[0_0_30px_-4px_hsl(var(--glass-glow)/0.7)] transition-all duration-300"
           >
             {t("nav.bookNow")}
-          </a>
+          </Link>
         </div>
 
         {/* Mobile: language + menu */}
@@ -86,13 +87,13 @@ const Navbar = () => {
                   {t(l.labelKey)}
                 </a>
               ))}
-              <a
-                href="#contact"
+              <Link
+                to="/rezervace"
                 onClick={() => setOpen(false)}
                 className="inline-flex h-9 items-center justify-center rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground w-fit"
               >
                 {t("nav.bookNow")}
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
