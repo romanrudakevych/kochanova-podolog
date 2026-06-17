@@ -73,6 +73,12 @@
     "viewPriceList": "Zobrazit ceník",
     "priceListAlt": "Ceník podologických služeb"
   },
+  "stats": {
+    "experience": "Let praxe",
+    "patients": "Ošetřených pacientů",
+    "services": "Specializovaných služeb",
+    "satisfaction": "Spokojenost pacientů"
+  },
   "gallery": {
     "eyebrow": "Galerie",
     "title": "Uvnitř ordinace",
