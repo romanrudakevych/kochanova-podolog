@@ -144,14 +144,10 @@
     "submit": "Отправить сообщение"
   },
   "footer": {
-    "legalNav": "Юридические документы и политики",
     "copyright": "© 2026",
-    "brandAccent": "Podo",
-    "brandRest": "Care.",
-    "rights": "Все права защищены.",
-    "legalNotice": "Правовая информация",
-    "privacy": "Конфиденциальность",
-    "cookies": "Файлы cookie"
+    "brandAccent": "Kochanova",
+    "brandRest": "",
+    "rights": "Все права защищены."
   },
   "notFound": {
     "title": "404",

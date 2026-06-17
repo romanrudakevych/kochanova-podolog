@@ -144,14 +144,10 @@
     "submit": "Odeslat zprávu"
   },
   "footer": {
-    "legalNav": "Právní odkazy a zásady",
     "copyright": "© 2026",
-    "brandAccent": "Podo",
-    "brandRest": "Care.",
-    "rights": "Všechna práva vyhrazena.",
-    "legalNotice": "Právní informace",
-    "privacy": "Ochrana soukromí",
-    "cookies": "Cookies"
+    "brandAccent": "Kochanova",
+    "brandRest": "",
+    "rights": "Všechna práva vyhrazena."
   },
   "notFound": {
     "title": "404",
