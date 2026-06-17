@@ -27,7 +27,6 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <a href="#hero" className="text-xl font-bold text-foreground">
           <span className="text-primary">{t("brand.accent")}</span>
-          {t("brand.name")}
         </a>
 
         {/* Desktop */}
