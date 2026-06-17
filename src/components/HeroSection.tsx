@@ -31,7 +31,9 @@ const HeroSection = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-foreground text-glow mb-6">
               {t("hero.titleLine1")}
               <br />
-              {t("hero.titleLine2For")} <span className="text-primary">{t("hero.titleHighlight")}</span>
+              {t("hero.titleLine2For")}
+              <br />
+               <span className="text-primary">{t("hero.titleHighlight")}</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg mb-8 leading-relaxed">{t("hero.subtitle")}</p>
             <div className="flex flex-wrap gap-4">
@@ -67,7 +69,7 @@ const HeroSection = () => {
               transition={{ delay: 1, duration: 0.6 }}
               className="absolute -bottom-6 -left-6 glass-panel px-5 py-4 animate-float-slow"
             >
-              <p className="text-2xl font-bold text-primary">+15</p>
+              <p className="text-2xl font-bold text-primary">+5</p>
               <p className="text-xs text-muted-foreground">{t("hero.statExperience")}</p>
             </motion.div>
             <motion.div
@@ -76,7 +78,7 @@ const HeroSection = () => {
               transition={{ delay: 1.2, duration: 0.6 }}
               className="absolute -top-4 -right-4 glass-panel px-5 py-4 animate-float-delayed"
             >
-              <p className="text-2xl font-bold text-accent">+5000</p>
+              <p className="text-2xl font-bold text-accent">+2500</p>
               <p className="text-xs text-muted-foreground">{t("hero.statPatients")}</p>
             </motion.div>
           </motion.div>
