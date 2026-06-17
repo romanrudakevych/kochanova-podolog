@@ -47,28 +47,28 @@
     "title": "Řešení pro každou potřebu",
     "subtitle": "Nabízíme široké spektrum podologických výkonů v nejvyšší kvalitě a s moderní technologií.",
     "chiropody": {
-      "title": "Pedikúra",
-      "desc": "Komplexní ošetření mozolí, kuřích ok a nehtů pro dokonalý stav vašich nohou."
+      "title": "Bradavice",
+      "desc": "Profesionální diagnostika a léčba bradavic na chodidlech bezpečnými a efektivními metodami s důrazem na prevenci opakování."
     },
     "ingrown": {
       "title": "Zarůstající nehty",
       "desc": "Profesionální korekce onychokryptózy s minimálně invazivními technikami."
     },
     "diabetic": {
-      "title": "Diabetická noha",
-      "desc": "Specializovaná preventivní péče pro diabetiky s individuálním protokolem."
+      "title": "Otlaky",
+      "desc": "Odborné ošetření otlaků na chodidlech způsobených tlakem a třením obuvi, včetně prevence jejich opakování."
     },
     "biomechanical": {
-      "title": "Biomechanické vyšetření",
-      "desc": "Digitální analýza chůze pro výrobu vložek do obuvi na míru podle vašich potřeb."
+      "title": "Praskající paty",
+      "desc": "Ošetření suchých a popraskaných patek včetně hydratace a doporučení pro dlouhodobou péči o kůži chodidel."
     },
     "sports": {
       "title": "Sportovní podologie",
       "desc": "Prevence a léčba sportovních úrazů nohou pro sportovce všech úrovní."
     },
     "aesthetic": {
-      "title": "Estetická podologie",
-      "desc": "Estetické výkony na nohy: mykózy, bradavice a rekonstrukce nehtů."
+      "title": "Plísně nehtů",
+      "desc": "Diagnostika a léčba plísňových onemocnění nehtů na nohou moderními metodami pro zdravý a estetický vzhled."
     },
     "viewPriceList": "Zobrazit ceník",
     "priceListAlt": "Ceník podologických služeb"

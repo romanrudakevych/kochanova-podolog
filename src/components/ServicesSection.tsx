@@ -1,13 +1,21 @@
 import { motion } from "framer-motion";
-import { Footprints, Scissors, ShieldCheck, Scan, HeartPulse, Sparkles, ScrollText } from "lucide-react";
+import { CircleDot, Droplets, Dumbbell, Footprints, Microscope, Scissors, ScrollText } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import priceListImg from "@/assets/price-list.jpg";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
-const serviceKeys = ["chiropody", "ingrown", "diabetic", "biomechanical", "sports", "aesthetic"] as const;
+const serviceKeys = ["ingrown", "chiropody", "diabetic", "biomechanical", "sports", "aesthetic"] as const;
 
-const icons = [Footprints, Scissors, ShieldCheck, Scan, HeartPulse, Sparkles];
+const serviceIcons: Record<(typeof serviceKeys)[number], LucideIcon> = {
+  ingrown: Scissors,
+  chiropody: CircleDot,
+  diabetic: Footprints,
+  biomechanical: Droplets,
+  sports: Dumbbell,
+  aesthetic: Microscope,
+};
 
 const ServicesSection = () => {
   const { t } = useTranslation();
@@ -31,7 +39,7 @@ const ServicesSection = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {serviceKeys.map((key, i) => {
-            const Icon = icons[i];
+            const Icon = serviceIcons[key];
             return (
               <motion.div
                 key={key}
