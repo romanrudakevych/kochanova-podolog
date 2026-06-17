@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Award, GraduationCap, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import avatarImg from "@/assets/avatar.jpg";
+import cpsLogoImg from "@/assets/ceska-podologicka-spolecnost-logo.png";
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -102,6 +103,12 @@ const AboutSection = () => {
               <p>{t("about.p1")}</p>
               <p>{t("about.p2")}</p>
               <p>{t("about.p3")}</p>
+              <p>{t("about.p4")}</p>
+              <img
+                src={cpsLogoImg}
+                alt={t("about.cpsLogoAlt")}
+                className="h-24 w-24 object-contain"
+              />
             </div>
           </motion.div>
         </div>
