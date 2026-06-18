@@ -25,7 +25,7 @@ const CountUpNumber = ({ value, prefix = "", suffix = "", duration }: Omit<StatI
 const statItems: StatItem[] = [
   { value: 5, prefix: "+", labelKey: "stats.experience", duration: 1.8 },
   { value: 2500, prefix: "+", labelKey: "stats.patients", duration: 2.2 },
-  { value: 13, labelKey: "stats.services", duration: 1.5 },
+  { value: 12, labelKey: "stats.services", duration: 1.5 },
   { value: 100, suffix: "%", labelKey: "stats.satisfaction", duration: 2 },
 ];
 
