@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { CircleDot, Droplets, Dumbbell, Footprints, Microscope, Scissors, ScrollText } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import priceListImg from "@/assets/price-list.jpg";
+import priceListImg from "@/assets/price-list.webp";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 

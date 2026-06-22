@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Award, GraduationCap, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import avatarImg from "@/assets/avatar.jpg";
-import cpsLogoImg from "@/assets/ceska-podologicka-spolecnost-logo.png";
-import cpdrsLogoImg from "@/assets/ceska-podiatricka-spolecnost-logo.png";
+import avatarImg from "@/assets/avatar.webp";
+import cpsLogoImg from "@/assets/ceska-podologicka-spolecnost-logo.webp";
+import cpdrsLogoImg from "@/assets/ceska-podiatricka-spolecnost-logo.webp";
 
 const AboutSection = () => {
   const { t } = useTranslation();
