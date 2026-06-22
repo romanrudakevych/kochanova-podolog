@@ -113,8 +113,9 @@
     "p1": "Jsem licencovaný podolog s více než 5 lety zkušeností v komplexní péči o nohy. Díky dalšímu vzdělávání a zájmu o podologii nabízím léčebné postupy podle nejnovějších poznatků.",
     "p2": "Věřím, že zdravé nohy jsou základem aktivního a naplňujícího života. Každý pacient dostane individuální plán péče podle svých potřeb.",
     "p3": "Ordinace je vybavena moderní technikou a dodržuji nejpřísnější hygienické standardy, abyste se při každé návštěvě cítili v bezpečí a pohodlně.",
-    "p4": "Jsem certifikovaný člen České podologické společnosti.",
-    "cpsLogoAlt": "Logo České podologické společnosti"
+    "p4": "Jsem certifikovanou členkou České podologické společnosti a České podiatrické společnosti",
+    "cpsLogoAlt": "Logo České podologické společnosti",
+    "cpdrsLogoAlt": "Logo České podiatrické společnosti"
   },
   "certificates": {
     "eyebrow": "Certifikáty",

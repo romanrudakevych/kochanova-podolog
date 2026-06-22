@@ -3,6 +3,7 @@ import { Award, GraduationCap, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import avatarImg from "@/assets/avatar.jpg";
 import cpsLogoImg from "@/assets/ceska-podologicka-spolecnost-logo.png";
+import cpdrsLogoImg from "@/assets/ceska-podiatricka-spolecnost-logo.png";
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -104,11 +105,18 @@ const AboutSection = () => {
               <p>{t("about.p2")}</p>
               <p>{t("about.p3")}</p>
               <p>{t("about.p4")}</p>
-              <img
-                src={cpsLogoImg}
-                alt={t("about.cpsLogoAlt")}
-                className="h-24 w-24 object-contain"
-              />
+              <div className="flex gap-4">
+                <img
+                  src={cpsLogoImg}
+                  alt={t("about.cpsLogoAlt")}
+                  className="h-24 w-24 object-contain"
+                />
+                <img
+                  src={cpdrsLogoImg}
+                  alt={t("about.cpdrsLogoAlt")}
+                  className="h-24 w-24 object-contain"
+                />
+              </div>
             </div>
           </motion.div>
         </div>
