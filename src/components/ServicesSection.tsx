@@ -17,6 +17,8 @@ const serviceIcons: Record<(typeof serviceKeys)[number], LucideIcon> = {
   aesthetic: Microscope,
 };
 
+const viewport = { once: true, amount: 0.2 } as const;
+
 const ServicesSection = () => {
   const { t } = useTranslation();
 
@@ -26,9 +28,9 @@ const ServicesSection = () => {
 
       <div className="container mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={viewport}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -43,11 +45,11 @@ const ServicesSection = () => {
             return (
               <motion.div
                 key={key}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="glass-panel-hover p-8 group"
+                viewport={viewport}
+                transition={{ duration: 0.5, delay: Math.min(i * 0.06, 0.18) }}
+                className="glass-panel-hover p-6 sm:p-8 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-300">
                   <Icon className="h-6 w-6 text-primary" aria-hidden />
@@ -61,10 +63,10 @@ const ServicesSection = () => {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={viewport}
+        transition={{ duration: 0.6 }}
         className="container mx-auto px-6 mt-16 flex justify-center"
       >
         <Dialog>
@@ -72,7 +74,7 @@ const ServicesSection = () => {
             <Button
               variant="glass"
               size="lg"
-              className="h-[5.5rem] rounded-2xl px-16 text-2xl gap-4 [&_svg]:!size-10"
+              className="h-16 sm:h-[5.5rem] w-full max-w-sm sm:max-w-none sm:w-auto rounded-2xl px-8 sm:px-16 text-lg sm:text-2xl gap-3 sm:gap-4 [&_svg]:!size-8 sm:[&_svg]:!size-10"
             >
               <ScrollText aria-hidden />
               {t("services.viewPriceList")}
