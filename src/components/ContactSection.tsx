@@ -49,16 +49,16 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto"
+          className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto min-w-0"
         >
           {contactColumns.map((column, columnIndex) => (
-            <div key={columnIndex} className="space-y-6">
+            <div key={columnIndex} className="space-y-4 sm:space-y-6 min-w-0">
               {column.map((item) => (
-                <div key={item.labelKey} className="glass-panel-hover flex items-center gap-5 p-6">
+                <div key={item.labelKey} className="glass-panel-hover flex items-start sm:items-center gap-4 sm:gap-5 p-4 sm:p-6 min-w-0 w-full">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
                     <item.icon className="h-5 w-5 text-primary" aria-hidden />
                   </div>
-                  <div>
+                  <div className="min-w-0 flex-1">
                     <p className="text-sm text-muted-foreground">{t(item.labelKey)}</p>
                     {"href" in item ? (
                       <a
@@ -66,12 +66,12 @@ const ContactSection = () => {
                         {...(item.href.startsWith("http")
                           ? { target: "_blank", rel: "noopener noreferrer" }
                           : {})}
-                        className="text-foreground font-medium hover:text-primary transition-colors"
+                        className="text-foreground font-medium hover:text-primary transition-colors break-words"
                       >
                         {t(item.valueKey)}
                       </a>
                     ) : (
-                      <p className="text-foreground font-medium">{t(item.valueKey)}</p>
+                      <p className="text-foreground font-medium break-words">{t(item.valueKey)}</p>
                     )}
                   </div>
                 </div>
