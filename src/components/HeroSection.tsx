@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImg from "@/assets/hero.webp";
+import heroImg from "@/assets/hero2.webp";
 
 const HeroSection = () => {
   const { t } = useTranslation();
