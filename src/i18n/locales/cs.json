@@ -46,6 +46,12 @@
     "eyebrow": "Služby",
     "title": "Řešení pro každou potřebu",
     "subtitle": "Nabízíme široké spektrum podologických výkonů v nejvyšší kvalitě a s moderní technologií.",
+    "consultation": {
+      "title": "Podologická konzultace",
+      "desc": "Odborné posouzení stavu chodidel, doporučení léčby a individuální plán podologické péče.",
+      "price": "500 Kč",
+      "duration": "30 min"
+    },
     "chiropody": {
       "title": "Bradavice",
       "desc": "Profesionální diagnostika a léčba bradavic na chodidlech bezpečnými a efektivními metodami s důrazem na prevenci opakování."
@@ -72,6 +78,28 @@
     },
     "viewPriceList": "Zobrazit ceník",
     "priceListAlt": "Ceník podologických služeb"
+  },
+  "consultationPage": {
+    "metaTitle": "Podologická konzultace v Praze — Kochanova",
+    "metaDescription": "Odborná podologická konzultace v centru Prahy. Komplexní vyšetření chodidel, diagnostika a individuální plán péče.",
+    "eyebrow": "Služby",
+    "title": "Podologická konzultace v Praze",
+    "subtitle": "První krok ke zdravým chodidlům — odborné posouzení, jasná doporučení a plán péče šitý na míru vašim potřebám.",
+    "priceLabel": "Cena konzultace",
+    "price": "500 Kč",
+    "p1": "Podologická konzultace je základní vyšetření, při kterém podolog detailně posoudí stav vašich chodidel, nehtů a kůže. V ordinaci v centru Prahy vám poskytnu čas na vysvětlení obtíží a navrhnu další postup léčby.",
+    "p2": "Konzultace je vhodná při bolestech chodidel, zarůstajících nehtech, otlacích, plísních, praskajících patách i při preventivní kontrole. Každý pacient odchází s jasným plánem a doporučením další péče.",
+    "includesTitle": "Co konzultace zahrnuje",
+    "includes": {
+      "item1": "Komplexní vyšetření chodidel, nehtů a kůže",
+      "item2": "Odbornou diagnostiku a vysvětlení příčin obtíží",
+      "item3": "Individuální plán péče a doporučení léčby",
+      "item4": "Možnost domluvit následné ošetření nebo další výkony"
+    },
+    "photo1": {
+      "alt": "Podolog provádí odborné vyšetření chodidla v ordinaci"
+    },
+    "bookCta": "Objednat konzultaci"
   },
   "stats": {
     "experience": "Let praxe",

@@ -1,20 +1,31 @@
 import { motion } from "framer-motion";
-import { CircleDot, Droplets, Dumbbell, Footprints, Microscope, Scissors, ScrollText } from "lucide-react";
+import { CircleDot, Clock, Droplets, Dumbbell, Footprints, MessagesSquare, Microscope, Scissors, ScrollText } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import priceListImg from "@/assets/price-list.webp";
+import consultationPhoto1 from "@/assets/consultation-photo-1.webp";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
-const serviceKeys = ["ingrown", "chiropody", "diabetic", "biomechanical", "sports", "aesthetic"] as const;
+const serviceKeys = ["consultation", "ingrown", "chiropody", "diabetic", "biomechanical", "sports", "aesthetic"] as const;
 
 const serviceIcons: Record<(typeof serviceKeys)[number], LucideIcon> = {
+  consultation: MessagesSquare,
   ingrown: Scissors,
   chiropody: CircleDot,
   diabetic: Footprints,
   biomechanical: Droplets,
   sports: Dumbbell,
   aesthetic: Microscope,
+};
+
+const serviceLinks: Partial<Record<(typeof serviceKeys)[number], string>> = {
+  consultation: "/podologicka-konzultace-praha",
+};
+
+const serviceImages: Partial<Record<(typeof serviceKeys)[number], string>> = {
+  consultation: consultationPhoto1,
 };
 
 const viewport = { once: true, amount: 0.2 } as const;
@@ -42,6 +53,41 @@ const ServicesSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {serviceKeys.map((key, i) => {
             const Icon = serviceIcons[key];
+            const href = serviceLinks[key];
+            const image = serviceImages[key];
+            const cardContent = (
+              <>
+                {image ? (
+                  <img
+                    src={image}
+                    alt={t("consultationPage.photo1.alt")}
+                    className="w-full rounded-lg object-cover aspect-[4/3] bg-muted mb-5"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-300">
+                    <Icon className="h-6 w-6 text-primary" aria-hidden />
+                  </div>
+                )}
+                <h3 className="text-lg font-semibold text-foreground mb-2">{t(`services.${key}.title`)}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{t(`services.${key}.desc`)}</p>
+                {key === "consultation" && (
+                  <div className="mt-4 pt-4 border-t border-border/40 flex items-center justify-between gap-3 px-1">
+                    <span className="text-lg font-bold text-primary">{t("services.consultation.price")}</span>
+                    <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+                      <Clock className="h-4 w-4" aria-hidden />
+                      {t("services.consultation.duration")}
+                    </span>
+                  </div>
+                )}
+              </>
+            );
+
+            const cardClassName = image
+              ? "glass-panel-hover p-3 sm:p-4 group block cursor-pointer"
+              : "glass-panel-hover p-6 sm:p-8 group block cursor-pointer";
+
             return (
               <motion.div
                 key={key}
@@ -49,13 +95,16 @@ const ServicesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={viewport}
                 transition={{ duration: 0.5, delay: Math.min(i * 0.06, 0.18) }}
-                className="glass-panel-hover p-6 sm:p-8 group"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-300">
-                  <Icon className="h-6 w-6 text-primary" aria-hidden />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{t(`services.${key}.title`)}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{t(`services.${key}.desc`)}</p>
+                {href ? (
+                  <Link to={href} className={cardClassName}>
+                    {cardContent}
+                  </Link>
+                ) : (
+                  <div className={image ? "glass-panel-hover p-3 sm:p-4 group" : "glass-panel-hover p-6 sm:p-8 group"}>
+                    {cardContent}
+                  </div>
+                )}
               </motion.div>
             );
           })}

@@ -10,11 +10,11 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
-    { labelKey: "nav.home", href: "#hero" },
-    { labelKey: "nav.services", href: "#services" },
-    // { labelKey: "nav.gallery", href: "#gallery" },
-    { labelKey: "nav.about", href: "#about" },
-    { labelKey: "nav.contact", href: "#contact" },
+    { labelKey: "nav.home", href: "/#hero" },
+    { labelKey: "nav.services", href: "/#services" },
+    // { labelKey: "nav.gallery", href: "/#gallery" },
+    { labelKey: "nav.about", href: "/#about" },
+    { labelKey: "nav.contact", href: "/#contact" },
   ];
 
   return (
@@ -26,9 +26,9 @@ const Navbar = () => {
       aria-label={t("nav.landmark")}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#hero" className="text-xl font-bold text-foreground">
+        <Link to="/" className="text-xl font-bold text-foreground">
           <span className="text-primary">{t("brand.accent")}</span>
-        </a>
+        </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-6 lg:gap-8">
