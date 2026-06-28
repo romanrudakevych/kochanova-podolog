@@ -53,16 +53,22 @@
       "duration": "30 min"
     },
     "chiropody": {
-      "title": "Bradavice",
-      "desc": "Profesionální diagnostika a léčba bradavic na chodidlech bezpečnými a efektivními metodami s důrazem na prevenci opakování."
+      "title": "Ošetření bradavic",
+      "desc": "Profesionální diagnostika a léčba bradavic na chodidlech bezpečnými a efektivními metodami s důrazem na prevenci opakování.",
+      "price": "600 Kč",
+      "duration": "30 min"
     },
     "ingrown": {
-      "title": "Zarůstající nehty",
-      "desc": "Profesionální korekce onychokryptózy s minimálně invazivními technikami."
+      "title": "Ošetření zarostlého nehtu",
+      "desc": "Profesionální korekce onychokryptózy s minimálně invazivními technikami.",
+      "price": "500 Kč",
+      "duration": "30 min"
     },
     "diabetic": {
-      "title": "Otlaky",
-      "desc": "Odborné ošetření otlaků na chodidlech způsobených tlakem a třením obuvi, včetně prevence jejich opakování."
+      "title": "Ošetření kuřího oka",
+      "desc": "Odborné ošetření kuřího oka a meziprstních mozolů na chodidlech včetně doporučení, jak předcházet jejich opakování.",
+      "price": "350 Kč",
+      "duration": "30 min"
     },
     "biomechanical": {
       "title": "Praskající paty",
@@ -100,6 +106,74 @@
       "alt": "Podolog provádí odborné vyšetření chodidla v ordinaci"
     },
     "bookCta": "Objednat konzultaci"
+  },
+  "ingrownPage": {
+    "metaTitle": "Ošetření zarostlého nehtu v Praze — Kochanova",
+    "metaDescription": "Profesionální ošetření zarostlého nehtu v centru Prahy. Bezpečná korekce onychokryptózy s minimálně invazivními technikami a doporučením prevence.",
+    "eyebrow": "Služby",
+    "title": "Ošetření zarostlého nehtu v Praze",
+    "subtitle": "Rychlá úleva od bolesti a odborná péče o zarostlý nehet — bezpečné ošetření s důrazem na komfort a prevenci opakování.",
+    "priceLabel": "Cena ošetření",
+    "price": "500 Kč",
+    "p1": "Zarostlý nehet (onychokryptóza) je bolestivý stav, při kterém okraj nehtu tlačí do okolní kůže. V ordinaci v centru Prahy provedu šetrné ošetření, odstraním tlak a navrhnu další postup péče podle závažnosti případu.",
+    "p2": "Ošetření je vhodné při akutní bolesti, zarudnutí, otoku nebo opakovaných potížích s nehtem. Cílem je rychlá úleva, odborná korekce a doporučení, jak problémům předcházet v budoucnu.",
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření postiženého nehtu a okolní kůže",
+      "item2": "Šetrnou korekci zarostlého okraje nehtu",
+      "item3": "Dezinfekci a doporučení domácí péče",
+      "item4": "Rady k prevenci opětovného zarůstání nehtu"
+    },
+    "photo1": {
+      "alt": "Podolog ošetřuje zarostlý nehet v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
+  },
+  "chiropodyPage": {
+    "metaTitle": "Ošetření bradavice v Praze — Kochanova",
+    "metaDescription": "Profesionální ošetření bradavic na chodidlech v centru Prahy. Bezpečná diagnostika a léčba s důrazem na prevenci opakování.",
+    "eyebrow": "Služby",
+    "title": "Ošetření bradavice v Praze",
+    "subtitle": "Odborná diagnostika a šetrná léčba bradavic na chodidlech — bezpečné metody s cílem odstranit problém a předcházet jeho návratu.",
+    "priceLabel": "Cena ošetření",
+    "price": "600 Kč",
+    "p1": "Bradavice na chodidlech jsou běžný kožní problém způsobený virem HPV. V ordinaci v centru Prahy nejprve posoudím typ a rozsah postižení a navrhnu vhodný způsob léčby podle stavu bradavice i vašich potřeb.",
+    "p2": "Ošetření je vhodné při bolestivých, rostoucích nebo opakovaně se objevujících bradavicích na chodidlech. Cílem je bezpečné odstranění bradavice, úleva od obtíží a doporučení, jak předcházet šíření infekce.",
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření bradavice a okolní kůže na chodidle",
+      "item2": "Odbornou diagnostiku a výběr vhodné metody léčby",
+      "item3": "Profesionální ošetření bradavice v sterilním prostředí",
+      "item4": "Doporučení domácí péče a prevence opakování"
+    },
+    "photo1": {
+      "alt": "Podolog ošetřuje bradavici na chodidle v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
+  },
+  "diabeticPage": {
+    "metaTitle": "Ošetření kuřího oka v Praze — Kochanova",
+    "metaDescription": "Profesionální ošetření kuřího oka a meziprstních mozolů v centru Prahy. Šetrná léčba s důrazem na úlevu od bolesti a prevenci opakování.",
+    "eyebrow": "Služby",
+    "title": "Ošetření kuřího oka v Praze",
+    "subtitle": "Rychlá úleva od bolesti a odborná péče o kuří oko — šetrné ošetření s doporučením, jak problémům předcházet.",
+    "priceLabel": "Cena ošetření kuřího oka <strong>bez pedikúry</strong>",
+    "price": "350 Kč",
+    "priceLabelWithPedicure": "Cena ošetření kuřího oka <strong>při pedikúre</strong>",
+    "priceWithPedicure": "150 Kč",
+    "p1": "Kuří oko je bolestivá mozolnatá změna na chodidle, která vzniká vlivem opakovaného tlaku a tření. V ordinaci v centru Prahy posoudím postižené místo a provedu šetrné ošetření s cílem odstranit tlak a zmírnit obtíže.",
+    "p2": "Ošetření je vhodné při bolestivém kuřím oku, meziprstních mozolech nebo při opakovaných potížích způsobených obuví či zatížením chodidla. Cílem je úleva od bolesti, odborná korekce a doporučení pro dlouhodobou prevenci.",
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření kuřího oka a okolní kůže na chodidle",
+      "item2": "Šetrné ošetření a odstranění bolestivého tlaku",
+      "item3": "Dezinfekci a doporučení domácí péče",
+      "item4": "Rady k výběru obuvi a prevenci opakování"
+    },
+    "photo1": {
+      "alt": "Podolog ošetřuje kuří oko na chodidle v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
   },
   "stats": {
     "experience": "Let praxe",

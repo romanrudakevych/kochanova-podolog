@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import priceListImg from "@/assets/price-list.webp";
 import consultationPhoto1 from "@/assets/consultation-photo-1.webp";
+import ingrownPhoto1 from "@/assets/ingrown-photo-1.webp";
+import chiropodyPhoto1 from "@/assets/chiropody-photo-1.webp";
+import diabeticPhoto1 from "@/assets/diabetic-photo-1.webp";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
@@ -20,12 +23,46 @@ const serviceIcons: Record<(typeof serviceKeys)[number], LucideIcon> = {
   aesthetic: Microscope,
 };
 
-const serviceLinks: Partial<Record<(typeof serviceKeys)[number], string>> = {
-  consultation: "/podologicka-konzultace-praha",
-};
+type FeaturedServiceKey = "consultation" | "ingrown" | "chiropody" | "diabetic";
 
-const serviceImages: Partial<Record<(typeof serviceKeys)[number], string>> = {
-  consultation: consultationPhoto1,
+const featuredServices: Record<
+  FeaturedServiceKey,
+  {
+    href: string;
+    image: string;
+    imageAltKey: string;
+    priceKey: string;
+    durationKey: string;
+  }
+> = {
+  consultation: {
+    href: "/podologicka-konzultace-praha",
+    image: consultationPhoto1,
+    imageAltKey: "consultationPage.photo1.alt",
+    priceKey: "services.consultation.price",
+    durationKey: "services.consultation.duration",
+  },
+  ingrown: {
+    href: "/zarostly-nehet-praha",
+    image: ingrownPhoto1,
+    imageAltKey: "ingrownPage.photo1.alt",
+    priceKey: "services.ingrown.price",
+    durationKey: "services.ingrown.duration",
+  },
+  chiropody: {
+    href: "/bradavice-praha",
+    image: chiropodyPhoto1,
+    imageAltKey: "chiropodyPage.photo1.alt",
+    priceKey: "services.chiropody.price",
+    durationKey: "services.chiropody.duration",
+  },
+  diabetic: {
+    href: "/kuri-oko-praha",
+    image: diabeticPhoto1,
+    imageAltKey: "diabeticPage.photo1.alt",
+    priceKey: "services.diabetic.price",
+    durationKey: "services.diabetic.duration",
+  },
 };
 
 const viewport = { once: true, amount: 0.2 } as const;
@@ -53,14 +90,13 @@ const ServicesSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {serviceKeys.map((key, i) => {
             const Icon = serviceIcons[key];
-            const href = serviceLinks[key];
-            const image = serviceImages[key];
+            const featured = featuredServices[key as FeaturedServiceKey];
             const cardContent = (
               <>
-                {image ? (
+                {featured ? (
                   <img
-                    src={image}
-                    alt={t("consultationPage.photo1.alt")}
+                    src={featured.image}
+                    alt={t(featured.imageAltKey)}
                     className="w-full rounded-lg object-cover aspect-[4/3] bg-muted mb-5"
                     loading="lazy"
                     decoding="async"
@@ -72,19 +108,19 @@ const ServicesSection = () => {
                 )}
                 <h3 className="text-lg font-semibold text-foreground mb-2">{t(`services.${key}.title`)}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{t(`services.${key}.desc`)}</p>
-                {key === "consultation" && (
+                {featured && (
                   <div className="mt-4 pt-4 border-t border-border/40 flex items-center justify-between gap-3 px-1">
-                    <span className="text-lg font-bold text-primary">{t("services.consultation.price")}</span>
+                    <span className="text-lg font-bold text-primary">{t(featured.priceKey)}</span>
                     <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
                       <Clock className="h-4 w-4" aria-hidden />
-                      {t("services.consultation.duration")}
+                      {t(featured.durationKey)}
                     </span>
                   </div>
                 )}
               </>
             );
 
-            const cardClassName = image
+            const cardClassName = featured
               ? "glass-panel-hover p-3 sm:p-4 group block cursor-pointer"
               : "glass-panel-hover p-6 sm:p-8 group block cursor-pointer";
 
@@ -96,12 +132,12 @@ const ServicesSection = () => {
                 viewport={viewport}
                 transition={{ duration: 0.5, delay: Math.min(i * 0.06, 0.18) }}
               >
-                {href ? (
-                  <Link to={href} className={cardClassName}>
+                {featured ? (
+                  <Link to={featured.href} className={cardClassName}>
                     {cardContent}
                   </Link>
                 ) : (
-                  <div className={image ? "glass-panel-hover p-3 sm:p-4 group" : "glass-panel-hover p-6 sm:p-8 group"}>
+                  <div className="glass-panel-hover p-6 sm:p-8 group">
                     {cardContent}
                   </div>
                 )}

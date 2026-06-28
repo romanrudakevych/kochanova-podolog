@@ -9,6 +9,9 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Reservation from "./pages/Reservation.tsx";
 import PodologicConsultation from "./pages/PodologicConsultation.tsx";
+import IngrownNailTreatment from "./pages/IngrownNailTreatment.tsx";
+import WartTreatment from "./pages/WartTreatment.tsx";
+import CornTreatment from "./pages/CornTreatment.tsx";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +27,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/rezervace" element={<Reservation />} />
           <Route path="/podologicka-konzultace-praha" element={<PodologicConsultation />} />
+          <Route path="/zarostly-nehet-praha" element={<IngrownNailTreatment />} />
+          <Route path="/bradavice-praha" element={<WartTreatment />} />
+          <Route path="/kuri-oko-praha" element={<CornTreatment />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
