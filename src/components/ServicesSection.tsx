@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CircleDot, Clock, Droplets, Dumbbell, Footprints, MessagesSquare, Microscope, Scissors, ScrollText } from "lucide-react";
+import { Bandage, CircleDot, Clock, Droplets, Dumbbell, Footprints, Layers, MessagesSquare, Microscope, Plus, Scissors, ScrollText, Sparkles } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -8,10 +8,17 @@ import consultationPhoto1 from "@/assets/consultation-photo-1.webp";
 import ingrownPhoto1 from "@/assets/ingrown-photo-1.webp";
 import chiropodyPhoto1 from "@/assets/chiropody-photo-1.webp";
 import diabeticPhoto1 from "@/assets/diabetic-photo-1.webp";
+import aestheticPhoto1 from "@/assets/aesthetic-photo-1.webp";
+import biomechanicalPhoto1 from "@/assets/biomechanical-photo-1.webp";
+import sportsPhoto1 from "@/assets/sports-photo-1.webp";
+import kartPhoto1 from "@/assets/kart-photo-1.webp";
+import okluzePhoto1 from "@/assets/okluze-photo-1.webp";
+import clipflowPhoto1 from "@/assets/clipflow-photo-1.webp";
+import tamponadaPhoto1 from "@/assets/tamponada-photo-1.webp";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
-const serviceKeys = ["consultation", "ingrown", "chiropody", "diabetic", "biomechanical", "sports", "aesthetic"] as const;
+const serviceKeys = ["consultation", "ingrown", "chiropody", "diabetic", "biomechanical", "sports", "kart", "aesthetic", "okluze", "clipflow", "tamponada"] as const;
 
 const serviceIcons: Record<(typeof serviceKeys)[number], LucideIcon> = {
   consultation: MessagesSquare,
@@ -20,10 +27,14 @@ const serviceIcons: Record<(typeof serviceKeys)[number], LucideIcon> = {
   diabetic: Footprints,
   biomechanical: Droplets,
   sports: Dumbbell,
+  kart: Sparkles,
   aesthetic: Microscope,
+  okluze: Layers,
+  clipflow: Plus,
+  tamponada: Bandage,
 };
 
-type FeaturedServiceKey = "consultation" | "ingrown" | "chiropody" | "diabetic";
+type FeaturedServiceKey = "consultation" | "ingrown" | "chiropody" | "diabetic" | "biomechanical" | "sports" | "kart" | "aesthetic" | "okluze" | "clipflow" | "tamponada";
 
 const featuredServices: Record<
   FeaturedServiceKey,
@@ -62,6 +73,55 @@ const featuredServices: Record<
     imageAltKey: "diabeticPage.photo1.alt",
     priceKey: "services.diabetic.price",
     durationKey: "services.diabetic.duration",
+  },
+  biomechanical: {
+    href: "/nehtove-rovnatko-praha",
+    image: biomechanicalPhoto1,
+    imageAltKey: "biomechanicalPage.photo1.alt",
+    priceKey: "services.biomechanical.price",
+    durationKey: "services.biomechanical.duration",
+  },
+  sports: {
+    href: "/podologicka-pedikura-praha",
+    image: sportsPhoto1,
+    imageAltKey: "sportsPage.photo1.alt",
+    priceKey: "services.sports.price",
+    durationKey: "services.sports.duration",
+  },
+  kart: {
+    href: "/kart-pedikura-praha",
+    image: kartPhoto1,
+    imageAltKey: "kartPage.photo1.alt",
+    priceKey: "services.kart.price",
+    durationKey: "services.kart.duration",
+  },
+  aesthetic: {
+    href: "/plisen-nehtu-praha",
+    image: aestheticPhoto1,
+    imageAltKey: "aestheticPage.photo1.alt",
+    priceKey: "services.aesthetic.price",
+    durationKey: "services.aesthetic.duration",
+  },
+  okluze: {
+    href: "/okluze",
+    image: okluzePhoto1,
+    imageAltKey: "okluzePage.photo1.alt",
+    priceKey: "services.okluze.price",
+    durationKey: "services.okluze.duration",
+  },
+  clipflow: {
+    href: "/nadstavba-nehtu",
+    image: clipflowPhoto1,
+    imageAltKey: "clipflowPage.photo1.alt",
+    priceKey: "services.clipflow.price",
+    durationKey: "services.clipflow.duration",
+  },
+  tamponada: {
+    href: "/tamponada",
+    image: tamponadaPhoto1,
+    imageAltKey: "tamponadaPage.photo1.alt",
+    priceKey: "services.tamponada.price",
+    durationKey: "services.tamponada.duration",
   },
 };
 
