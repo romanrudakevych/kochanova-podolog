@@ -125,6 +125,14 @@
     "price": "500 Kč",
     "p1": "Podologická konzultace je základní vyšetření, při kterém podolog detailně posoudí stav vašich chodidel, nehtů a kůže. V ordinaci v centru Prahy vám poskytnu čas na vysvětlení obtíží a navrhnu další postup léčby.",
     "p2": "Konzultace je vhodná při bolestech chodidel, zarůstajících nehtech, otlacích, plísních, praskajících patách i při preventivní kontrole. Každý pacient odchází s jasným plánem a doporučením další péče.",
+    "whenToConsiderTitle": "Kdy zvážit podologickou konzultaci:",
+    "whenToConsider": {
+      "item1": "Bolest či nepohodlí při chůzi a dlouhodobý tlak v okolí nehtů",
+      "item2": "Viditelné zhrubnutí, praskání nebo olupování kůže",
+      "item3": "Časté otlaky a drobné bolesti při chůzi",
+      "item4": "Změna barvy nebo tvaru nehtů",
+      "item5": "Pálení nebo svědění v oblasti chodidel"
+    },
     "includesTitle": "Co konzultace zahrnuje",
     "includes": {
       "item1": "Komplexní vyšetření chodidel, nehtů a kůže",
