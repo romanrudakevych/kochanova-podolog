@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import WhenToConsiderBlock from "@/components/WhenToConsiderBlock";
 import podologickaPedikuraPhoto from "@/assets/podologicka-pedikura.webp";
 
 const includeKeys = ["item1", "item2", "item3", "item4"] as const;
@@ -73,6 +74,7 @@ const PodologicPedicure = () => {
             >
               <p>{t("sportsPage.p1")}</p>
               <p>{t("sportsPage.p2")}</p>
+              <WhenToConsiderBlock pageKey="sportsPage" />
             </motion.div>
 
             <motion.div

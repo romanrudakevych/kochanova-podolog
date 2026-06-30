@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import WhenToConsiderBlock from "@/components/WhenToConsiderBlock";
 import bradavicePhoto from "@/assets/osetreni-bradavice.webp";
 
 const includeKeys = ["item1", "item2", "item3", "item4"] as const;
@@ -73,6 +74,7 @@ const WartTreatment = () => {
             >
               <p>{t("chiropodyPage.p1")}</p>
               <p>{t("chiropodyPage.p2")}</p>
+              <WhenToConsiderBlock pageKey="chiropodyPage" />
             </motion.div>
 
             <motion.div

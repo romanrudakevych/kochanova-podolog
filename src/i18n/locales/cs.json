@@ -155,6 +155,14 @@
     "price": "500 Kč",
     "p1": "Zarostlý nehet (onychokryptóza) je bolestivý stav, při kterém okraj nehtu tlačí do okolní kůže. V ordinaci v centru Prahy provedu šetrné ošetření, odstraním tlak a navrhnu další postup péče podle závažnosti případu.",
     "p2": "Ošetření je vhodné při akutní bolesti, zarudnutí, otoku nebo opakovaných potížích s nehtem. Cílem je rychlá úleva, odborná korekce a doporučení, jak problémům předcházet v budoucnu.",
+    "whenToConsiderTitle": "Kdy zvážit ošetření zarostlého nehtu:",
+    "whenToConsider": {
+      "item1": "Bolest při chůzi nebo tlaku na okraj nehtu",
+      "item2": "Zarudnutí, otok nebo citlivost v okolí nehtu",
+      "item3": "Opakované zarůstání stejného nehtu",
+      "item4": "Zánět nebo výtok z okolí nehtu",
+      "item5": "Potíže s obuví kvůli bolesti nehtu"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Vyšetření postiženého nehtu a okolní kůže",
@@ -177,6 +185,14 @@
     "price": "600 Kč",
     "p1": "Bradavice na chodidlech jsou běžný kožní problém způsobený virem HPV. V ordinaci v centru Prahy nejprve posoudím typ a rozsah postižení a navrhnu vhodný způsob léčby podle stavu bradavice i vašich potřeb.",
     "p2": "Ošetření je vhodné při bolestivých, rostoucích nebo opakovaně se objevujících bradavicích na chodidlech. Cílem je bezpečné odstranění bradavice, úleva od obtíží a doporučení, jak předcházet šíření infekce.",
+    "whenToConsiderTitle": "Kdy zvážit ošetření bradavice:",
+    "whenToConsider": {
+      "item1": "Bolestivá bradavice na chodidle při chůzi",
+      "item2": "Rostoucí nebo šířící se bradavice",
+      "item3": "Opakovaný výskyt bradavice na stejném místě",
+      "item4": "Změna vzhledu nebo velikosti bradavice",
+      "item5": "Potíže při sportu nebo nošení obuvi"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Vyšetření bradavice a okolní kůže na chodidle",
@@ -201,6 +217,14 @@
     "priceWithPedicure": "150 Kč",
     "p1": "Kuří oko je bolestivá mozolnatá změna na chodidle, která vzniká vlivem opakovaného tlaku a tření. V ordinaci v centru Prahy posoudím postižené místo a provedu šetrné ošetření s cílem odstranit tlak a zmírnit obtíže.",
     "p2": "Ošetření je vhodné při bolestivém kuřím oku, meziprstních mozolech nebo při opakovaných potížích způsobených obuví či zatížením chodidla. Cílem je úleva od bolesti, odborná korekce a doporučení pro dlouhodobou prevenci.",
+    "whenToConsiderTitle": "Kdy zvážit ošetření kuřího oka:",
+    "whenToConsider": {
+      "item1": "Ostrá bolest při došlapu na chodidlo",
+      "item2": "Tvrdá mozolnatá změna v tlakovém místě",
+      "item3": "Meziprstní mozoly způsobující bolest",
+      "item4": "Opakovaný výskyt na stejném místě",
+      "item5": "Bolest zhoršená obuví nebo zatížením"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Vyšetření kuřího oka a okolní kůže na chodidle",
@@ -223,6 +247,14 @@
     "price": "1 200 Kč",
     "p1": "Nehtové rovnátko (titanová nit) je moderní metoda korekce tvaru nehtu, která pomáhá při zarůstajících, zakřivených nebo deformovaných nehtech. V ordinaci v centru Prahy posoudím stav nehtu a aplikuji titanovou nit pro postupné narovnání nehtové ploténky.",
     "p2": "Ošetření je vhodné při opakovaném zarůstání nehtu, zakřiveném tvaru nehtu nebo při prevenci dalších potíží. Cílem je dlouhodobá korekce tvaru nehtu, úleva od obtíží a doporučení pro průběžnou péči mezi kontrolami.",
+    "whenToConsiderTitle": "Kdy zvážit nehtové rovnátko:",
+    "whenToConsider": {
+      "item1": "Opakované zarůstání nebo zakřivení nehtu",
+      "item2": "Bolest vlivem tlaku deformovaného nehtu",
+      "item3": "Nehet se zakřivuje do strany nebo dolů",
+      "item4": "Neúspěšné pokusy o domácí péči",
+      "item5": "Prevence dalších potíží s nehtem"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Vyšetření nehtu a posouzení vhodnosti metody",
@@ -245,6 +277,14 @@
     "price": "1 000 Kč",
     "p1": "Podologická pedikúra je přístrojové ošetření chodidel zaměřené na zdraví nehtů a kůže. V ordinaci v centru Prahy provedu šetrnou pedikúru s důrazem na hygienu, prevenci potíží a estetický výsledek podle stavu vašich chodidel.",
     "p2": "Ošetření je vhodné pro pravidelnou péči o chodidla, při suché kůži, zrohovatělých patách, otlacích i jako prevenci dalších podologických obtíží. Cílem je zdravá kůže, upravené nehty a doporučení pro domácí péči mezi návštěvami.",
+    "whenToConsiderTitle": "Kdy zvážit podologickou pedikúru:",
+    "whenToConsider": {
+      "item1": "Zrohovatělé paty nebo suchá popraskaná kůže",
+      "item2": "Nepravidelný tvar nebo délka nehtů",
+      "item3": "Pravidelná prevence otlaků a mozolů",
+      "item4": "Potřeba odborné péče místo kosmetické pedikúry",
+      "item5": "Celková únava a nepohodlí chodidel"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Vyšetření stavu nehtů a kůže chodidel",
@@ -267,6 +307,14 @@
     "price": "1 500 – 1 900 Kč",
     "p1": "KART pedikúra je specializované ošetření chodidel určené pro náročnější stavy nehtů a kůže. V ordinaci v centru Prahy provedu podrobné vyšetření a aplikuji metody KART pedikúry s cílem obnovit zdraví chodidel a předcházet dalším potížím.",
     "p2": "Ošetření je vhodné při opakovaných problémech s nehty, zrohovatělé kůži, otlacích nebo při potřebě hlubší podologické péče než u klasické pedikúry. Cílem je komplexní ošetření, zlepšení stavu chodidel a doporučení pro průběžnou domácí péči.",
+    "whenToConsiderTitle": "Kdy zvážit KART pedikúru:",
+    "whenToConsider": {
+      "item1": "Opakované problémy s nehty a kůží chodidel",
+      "item2": "Náročnější stavy než u běžné pedikúry",
+      "item3": "Hluboké otlaky nebo zrohovatělá kůže",
+      "item4": "Potřeba dlouhodobého plánu péče o chodidla",
+      "item5": "Chronické potíže s kůží nebo nehty"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Podrobné vyšetření nehtů a kůže chodidel",
@@ -289,6 +337,14 @@
     "price": "350 – 500 Kč",
     "p1": "Plíseň nehtu (onychomykóza) je běžné onemocnění, při kterém dochází ke změně barvy, struktury a tloušťky nehtu. V ordinaci v centru Prahy posoudím stav postiženého nehtu a navrhnu vhodný postup ošetření podle rozsahu a typu infekce.",
     "p2": "Ošetření je vhodné při ztluštění, lámavosti, změně barvy nehtu či při opakovaných potížích, které neodpovídají na běžnou domácí péči. Cílem je odborná léčba, zlepšení vzhledu nehtu a doporučení, jak infekci předcházet v budoucnu.",
+    "whenToConsiderTitle": "Kdy zvážit ošetření plísně nehtu:",
+    "whenToConsider": {
+      "item1": "Změna barvy nebo ztluštění nehtu",
+      "item2": "Lámavost, křehkost nebo odlišný tvar nehtu",
+      "item3": "Nehet se olupuje nebo je matný",
+      "item4": "Domácí péče bez zlepšení stavu",
+      "item5": "Podezření na šíření infekce na další nehty"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Vyšetření postiženého nehtu a okolní kůže",
@@ -311,6 +367,14 @@
     "price": "350 Kč",
     "p1": "Okluze je terapeutická metoda, při které se na postižené místo aplikuje okluzní materiál pro podporu hojení a zvýšení účinnosti léčby. V ordinaci v centru Prahy posoudím vhodnost této metody a provedu odborné ošetření podle stavu kůže nebo nehtu.",
     "p2": "Ošetření je vhodné při vybraných kožních a nehtových problémech, kde je vhodná okluzní terapie jako doplněk léčby. Cílem je podpořit regeneraci, zlepšit stav postiženého místa a doporučit další postup péče.",
+    "whenToConsiderTitle": "Kdy zvážit okluzi:",
+    "whenToConsider": {
+      "item1": "Vybrané kožní problémy vyžadující okluzní terapii",
+      "item2": "Potřeba podpořit hojení postiženého místa",
+      "item3": "Doporučení léčby zahrnující okluzní metodu",
+      "item4": "Problémy s nehtem nebo kůží vhodné pro okluzi",
+      "item5": "Potřeba zvýšit účinnost aplikované léčby"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Vyšetření postiženého místa na chodidle nebo nehtu",
@@ -333,6 +397,14 @@
     "price": "120 Kč",
     "p1": "Nadstavba nehtu Clip Flow je moderní metoda obnovy délky a tvaru nehtové ploténky pomocí speciálního systému. V ordinaci v centru Prahy posoudím stav nehtu a provedu profesionální nadstavbu s důrazem na zdraví a správnou funkci nehtu.",
     "p2": "Ošetření je vhodné při poškozeném, krátkém nebo deformovaném nehtu, kde je potřeba doplnit délku či tvar nehtové ploténky. Cílem je estetická a funkční obnova nehtu, ochrana nehtového lůžka a doporučení pro další péči.",
+    "whenToConsiderTitle": "Kdy zvážit nadstavbu nehtu Clip Flow:",
+    "whenToConsider": {
+      "item1": "Poškozený, ulomený nebo příliš krátký nehet",
+      "item2": "Deformovaný tvar nehtové ploténky",
+      "item3": "Potřeba ochrany nehtového lůžka",
+      "item4": "Estetická i funkční obnova délky nehtu",
+      "item5": "Doplnění ošetření po traumatu nehtu"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Vyšetření nehtu a posouzení vhodnosti nadstavby",
@@ -355,6 +427,14 @@
     "price": "60 Kč",
     "p1": "Tamponáda je podologický výkon, při kterém se do prostoru pod nebo vedle nehtu aplikuje sterilní materiál pro ochranu postiženého místa a úlevu od tlaku. V ordinaci v centru Prahy provedu tamponádu šetrně a odborně podle stavu nehtu a okolní kůže.",
     "p2": "Ošetření je vhodné při zarostlém nehtu, tlaku na okolní kůži nebo jako doplněk dalšího ošetření nehtu. Cílem je zmírnit obtíže, podpořit hojení a doporučit správnou domácí péči do další návštěvy.",
+    "whenToConsiderTitle": "Kdy zvážit tamponádu:",
+    "whenToConsider": {
+      "item1": "Tlak zarostlého nehtu na okolní kůži",
+      "item2": "Bolest a citlivost v okolí nehtu",
+      "item3": "Potřeba ochrany místa po ošetření nehtu",
+      "item4": "Doplněk k ošetření zarostlého nehtu",
+      "item5": "Podpora hojení do další návštěvy"
+    },
     "includesTitle": "Co ošetření zahrnuje",
     "includes": {
       "item1": "Vyšetření postiženého nehtu a okolní kůže",

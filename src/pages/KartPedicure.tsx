@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import WhenToConsiderBlock from "@/components/WhenToConsiderBlock";
 import kartPedikuraPhoto from "@/assets/kart-pedikura.webp";
 
 const includeKeys = ["item1", "item2", "item3", "item4"] as const;
@@ -73,6 +74,7 @@ const KartPedicure = () => {
             >
               <p>{t("kartPage.p1")}</p>
               <p>{t("kartPage.p2")}</p>
+              <WhenToConsiderBlock pageKey="kartPage" />
             </motion.div>
 
             <motion.div

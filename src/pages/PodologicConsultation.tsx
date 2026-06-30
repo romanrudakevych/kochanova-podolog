@@ -6,11 +6,10 @@ import { useTranslation } from "react-i18next";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import WhenToConsiderBlock from "@/components/WhenToConsiderBlock";
 import consultationPhoto1 from "@/assets/consultation-photo-1.webp";
 
 const includeKeys = ["item1", "item2", "item3", "item4"] as const;
-const considerLeftKeys = ["item1", "item2", "item3"] as const;
-const considerRightKeys = ["item4", "item5"] as const;
 
 const viewport = { once: true, amount: 0.2 } as const;
 
@@ -75,28 +74,7 @@ const PodologicConsultation = () => {
             >
               <p>{t("consultationPage.p1")}</p>
               <p>{t("consultationPage.p2")}</p>
-
-              <div className="rounded-xl bg-secondary/70 p-6 sm:p-8 mt-2">
-                <h2 className="text-lg font-semibold text-foreground mb-5">
-                  {t("consultationPage.whenToConsiderTitle")}
-                </h2>
-                <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
-                  <ul className="space-y-3 list-disc list-outside pl-5 marker:text-muted-foreground">
-                    {considerLeftKeys.map((key) => (
-                      <li key={key} className="text-sm text-muted-foreground leading-relaxed">
-                        {t(`consultationPage.whenToConsider.${key}`)}
-                      </li>
-                    ))}
-                  </ul>
-                  <ul className="space-y-3 list-disc list-outside pl-5 marker:text-muted-foreground">
-                    {considerRightKeys.map((key) => (
-                      <li key={key} className="text-sm text-muted-foreground leading-relaxed">
-                        {t(`consultationPage.whenToConsider.${key}`)}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              <WhenToConsiderBlock pageKey="consultationPage" />
             </motion.div>
 
             <motion.div
