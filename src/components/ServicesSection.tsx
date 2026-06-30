@@ -4,17 +4,17 @@ import type { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import priceListImg from "@/assets/price-list.webp";
-import consultationPhoto1 from "@/assets/consultation-photo-1.webp";
-import ingrownPhoto1 from "@/assets/ingrown-photo-1.webp";
-import chiropodyPhoto1 from "@/assets/chiropody-photo-1.webp";
-import diabeticPhoto1 from "@/assets/diabetic-photo-1.webp";
-import aestheticPhoto1 from "@/assets/aesthetic-photo-1.webp";
-import biomechanicalPhoto1 from "@/assets/biomechanical-photo-1.webp";
-import sportsPhoto1 from "@/assets/sports-photo-1.webp";
-import kartPhoto1 from "@/assets/kart-photo-1.webp";
-import okluzePhoto1 from "@/assets/okluze-photo-1.webp";
-import clipflowPhoto1 from "@/assets/clipflow-photo-1.webp";
-import tamponadaPhoto1 from "@/assets/tamponada-photo-1.webp";
+import consultationPhoto from "@/assets/consultation-photo-1.webp";
+import ingrownPhoto from "@/assets/osetreni-zarostleho-nehtu.webp";
+import bradavicePhoto from "@/assets/osetreni-bradavice.webp";
+import kuriOkoPhoto from "@/assets/osetreni-kuriho-oka.webp";
+import plisenNehtuPhoto from "@/assets/osetreni-plisne-nehtu.webp";
+import nehtoveRovnatkoPhoto from "@/assets/nehtove-rovnatko.webp";
+import podologickaPedikuraPhoto from "@/assets/podologicka-pedikura.webp";
+import kartPedikuraPhoto from "@/assets/kart-pedikura.webp";
+import okluzePhoto from "@/assets/okluze.webp";
+import nadstavbaNehtuPhoto from "@/assets/nadstavba-nehtu-clip-flow.webp";
+import tamponadaPhoto from "@/assets/tamponada.webp";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
@@ -48,77 +48,77 @@ const featuredServices: Record<
 > = {
   consultation: {
     href: "/podologicka-konzultace-praha",
-    image: consultationPhoto1,
+    image: consultationPhoto,
     imageAltKey: "consultationPage.photo1.alt",
     priceKey: "services.consultation.price",
     durationKey: "services.consultation.duration",
   },
   ingrown: {
     href: "/zarostly-nehet-praha",
-    image: ingrownPhoto1,
+    image: ingrownPhoto,
     imageAltKey: "ingrownPage.photo1.alt",
     priceKey: "services.ingrown.price",
     durationKey: "services.ingrown.duration",
   },
   chiropody: {
     href: "/bradavice-praha",
-    image: chiropodyPhoto1,
+    image: bradavicePhoto,
     imageAltKey: "chiropodyPage.photo1.alt",
     priceKey: "services.chiropody.price",
     durationKey: "services.chiropody.duration",
   },
   diabetic: {
     href: "/kuri-oko-praha",
-    image: diabeticPhoto1,
+    image: kuriOkoPhoto,
     imageAltKey: "diabeticPage.photo1.alt",
     priceKey: "services.diabetic.price",
     durationKey: "services.diabetic.duration",
   },
   biomechanical: {
     href: "/nehtove-rovnatko-praha",
-    image: biomechanicalPhoto1,
+    image: nehtoveRovnatkoPhoto,
     imageAltKey: "biomechanicalPage.photo1.alt",
     priceKey: "services.biomechanical.price",
     durationKey: "services.biomechanical.duration",
   },
   sports: {
     href: "/podologicka-pedikura-praha",
-    image: sportsPhoto1,
+    image: podologickaPedikuraPhoto,
     imageAltKey: "sportsPage.photo1.alt",
     priceKey: "services.sports.price",
     durationKey: "services.sports.duration",
   },
   kart: {
     href: "/kart-pedikura-praha",
-    image: kartPhoto1,
+    image: kartPedikuraPhoto,
     imageAltKey: "kartPage.photo1.alt",
     priceKey: "services.kart.price",
     durationKey: "services.kart.duration",
   },
   aesthetic: {
     href: "/plisen-nehtu-praha",
-    image: aestheticPhoto1,
+    image: plisenNehtuPhoto,
     imageAltKey: "aestheticPage.photo1.alt",
     priceKey: "services.aesthetic.price",
     durationKey: "services.aesthetic.duration",
   },
   okluze: {
     href: "/okluze",
-    image: okluzePhoto1,
+    image: okluzePhoto,
     imageAltKey: "okluzePage.photo1.alt",
     priceKey: "services.okluze.price",
     durationKey: "services.okluze.duration",
   },
   clipflow: {
     href: "/nadstavba-nehtu",
-    image: clipflowPhoto1,
+    image: nadstavbaNehtuPhoto,
     imageAltKey: "clipflowPage.photo1.alt",
     priceKey: "services.clipflow.price",
     durationKey: "services.clipflow.duration",
   },
   tamponada: {
     href: "/tamponada",
-    image: tamponadaPhoto1,
+    image: tamponadaPhoto,
     imageAltKey: "tamponadaPage.photo1.alt",
     priceKey: "services.tamponada.price",
     durationKey: "services.tamponada.duration",
@@ -207,7 +207,9 @@ const ServicesSection = () => {
         </div>
       </div>
 
-      <motion.div
+
+      {/* Price list dialog */}
+      {/* <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={viewport}
@@ -233,7 +235,7 @@ const ServicesSection = () => {
             />
           </DialogContent>
         </Dialog>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

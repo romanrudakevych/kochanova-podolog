@@ -6,7 +6,7 @@ import { Trans, useTranslation } from "react-i18next";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import diabeticPhoto1 from "@/assets/diabetic-photo-1.webp";
+import kuriOkoPhoto from "@/assets/osetreni-kuriho-oka.webp";
 
 const includeKeys = ["item1", "item2", "item3", "item4"] as const;
 
@@ -51,7 +51,7 @@ const CornTreatment = () => {
               <p className="text-muted-foreground mt-6 text-lg leading-relaxed">{t("diabeticPage.subtitle")}</p>
               <div className="glass-panel p-2 md:p-3 mt-10 max-w-2xl mx-auto">
                 <img
-                  src={diabeticPhoto1}
+                  src={kuriOkoPhoto}
                   alt={t("diabeticPage.photo1.alt")}
                   className="w-full rounded-lg object-cover aspect-[4/3] bg-muted"
                   loading="lazy"

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import tamponadaPhoto1 from "@/assets/tamponada-photo-1.webp";
+import tamponadaPhoto from "@/assets/tamponada.webp";
 
 const includeKeys = ["item1", "item2", "item3", "item4"] as const;
 
@@ -51,7 +51,7 @@ const TamponadeTreatment = () => {
               <p className="text-muted-foreground mt-6 text-lg leading-relaxed">{t("tamponadaPage.subtitle")}</p>
               <div className="glass-panel p-2 md:p-3 mt-10 max-w-2xl mx-auto">
                 <img
-                  src={tamponadaPhoto1}
+                  src={tamponadaPhoto}
                   alt={t("tamponadaPage.photo1.alt")}
                   className="w-full rounded-lg object-cover aspect-[4/3] bg-muted"
                   loading="lazy"
