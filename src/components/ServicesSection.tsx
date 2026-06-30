@@ -167,9 +167,9 @@ const ServicesSection = () => {
                   </div>
                 )}
                 <h3 className="text-lg font-semibold text-foreground mb-2">{t(`services.${key}.title`)}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{t(`services.${key}.desc`)}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed flex-1">{t(`services.${key}.desc`)}</p>
                 {featured && (
-                  <div className="mt-4 pt-4 border-t border-border/40 flex items-center justify-between gap-3 px-1">
+                  <div className="mt-4 pt-4 border-t border-border/40 flex items-center justify-between gap-3 px-1 shrink-0">
                     <span className="text-lg font-bold text-primary">{t(featured.priceKey)}</span>
                     <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
                       <Clock className="h-4 w-4" aria-hidden />
@@ -181,8 +181,8 @@ const ServicesSection = () => {
             );
 
             const cardClassName = featured
-              ? "glass-panel-hover p-3 sm:p-4 group block cursor-pointer"
-              : "glass-panel-hover p-6 sm:p-8 group block cursor-pointer";
+              ? "glass-panel-hover p-3 sm:p-4 group flex h-full flex-col cursor-pointer"
+              : "glass-panel-hover p-6 sm:p-8 group flex h-full flex-col cursor-pointer";
 
             return (
               <motion.div
@@ -191,13 +191,14 @@ const ServicesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={viewport}
                 transition={{ duration: 0.5, delay: Math.min(i * 0.06, 0.18) }}
+                className="h-full"
               >
                 {featured ? (
                   <Link to={featured.href} className={cardClassName}>
                     {cardContent}
                   </Link>
                 ) : (
-                  <div className="glass-panel-hover p-6 sm:p-8 group">
+                  <div className="glass-panel-hover p-6 sm:p-8 group flex h-full flex-col">
                     {cardContent}
                   </div>
                 )}
