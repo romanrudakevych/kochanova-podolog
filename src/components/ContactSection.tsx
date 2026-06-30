@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Instagram, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Send, CalendarDays } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -89,7 +89,7 @@ const ContactSection = () => {
         >
           <Button variant="hero" size="lg" className="rounded-xl text-base" asChild>
             <Link to="/rezervace">
-              <Phone className="mr-2 h-4 w-4" aria-hidden />
+              <CalendarDays className="mr-2 h-4 w-4" aria-hidden />
               {t("hero.bookAppointment")}
             </Link>
           </Button>

@@ -16,7 +16,7 @@ const Reservation = () => (
         allow="fullscreen"
       />
     </main>
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 

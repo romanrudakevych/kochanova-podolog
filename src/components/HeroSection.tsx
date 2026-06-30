@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowDown } from "lucide-react";
+import { CalendarDays, ArrowDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import heroImg from "@/assets/hero2.webp";
 
@@ -39,7 +39,7 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg" className="rounded-xl text-base" asChild>
                 <Link to="/rezervace">
-                  <Phone className="mr-2 h-4 w-4" aria-hidden />
+                  <CalendarDays className="mr-2 h-4 w-4" aria-hidden />
                   {t("hero.bookAppointment")}
                 </Link>
               </Button>

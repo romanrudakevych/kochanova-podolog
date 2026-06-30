@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { CheckCircle2, Clock, Phone } from "lucide-react";
+import { CheckCircle2, Clock, CalendarDays } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
@@ -118,7 +118,7 @@ const NailExtensionClipFlow = () => {
           >
             <Button variant="hero" size="lg" className="rounded-xl text-base" asChild>
               <Link to="/rezervace">
-                <Phone className="mr-2 h-4 w-4" aria-hidden />
+                <CalendarDays className="mr-2 h-4 w-4" aria-hidden />
                 {t("clipflowPage.bookCta")}
               </Link>
             </Button>
