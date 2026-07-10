@@ -59,8 +59,19 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative"
           >
-            <div className="glass-panel p-2">
-              <img src={heroImg} alt={t("hero.heroImageAlt")} className="w-full rounded-xl object-cover" />
+            <div className="glass-panel p-2 mx-auto w-full max-w-[420px] sm:max-w-none">
+              <div className="overflow-hidden rounded-xl aspect-square sm:aspect-[4/3] lg:aspect-square">
+                <img
+                  src={heroImg}
+                  alt={t("hero.heroImageAlt")}
+                  width={1024}
+                  height={1024}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </div>
             {/* Floating stat card */}
             <motion.div
