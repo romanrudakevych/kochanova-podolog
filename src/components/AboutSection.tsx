@@ -63,12 +63,21 @@ const AboutSection = () => {
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
             className="relative"
           >
             <div className="glass-panel p-2">
-              <img src={avatarImg} alt={t("hero.heroImageAlt")} className="w-full rounded-xl object-cover" />
+              <img
+                src={avatarImg}
+                alt={t("hero.heroImageAlt")}
+                width={640}
+                height={640}
+                loading="lazy"
+                decoding="async"
+                className="w-full rounded-xl object-cover"
+              />
             </div>
             {/* Floating stat card */}
             {/* <motion.div
@@ -109,11 +118,19 @@ const AboutSection = () => {
                 <img
                   src={cpsLogoImg}
                   alt={t("about.cpsLogoAlt")}
+                  width={96}
+                  height={96}
+                  loading="lazy"
+                  decoding="async"
                   className="h-24 w-24 object-contain"
                 />
                 <img
                   src={cpdrsLogoImg}
                   alt={t("about.cpdrsLogoAlt")}
+                  width={96}
+                  height={96}
+                  loading="lazy"
+                  decoding="async"
                   className="h-24 w-24 object-contain"
                 />
               </div>

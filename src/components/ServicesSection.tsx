@@ -157,6 +157,8 @@ const ServicesSection = () => {
                   <img
                     src={featured.image}
                     alt={t(featured.imageAltKey)}
+                    width={640}
+                    height={480}
                     className="w-full rounded-lg object-cover aspect-[4/3] bg-muted mb-5"
                     loading="lazy"
                     decoding="async"

@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CalendarDays, ArrowDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImg from "@/assets/hero2.webp";
+
+const heroImg = "/images/hero.webp";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -19,12 +20,8 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 pt-24 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Text */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+          {/* Text — no entrance animation to avoid delaying LCP */}
+          <div>
             <span className="inline-block glass-panel px-4 py-1.5 text-xs font-semibold tracking-wider text-primary uppercase mb-6">
               {t("hero.eyebrow")}
             </span>
@@ -33,7 +30,7 @@ const HeroSection = () => {
               <br />
               {t("hero.titleLine2For")}
               <br />
-               <span className="text-primary">{t("hero.titleHighlight")}</span>
+              <span className="text-primary">{t("hero.titleHighlight")}</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg mb-8 leading-relaxed">{t("hero.subtitle")}</p>
             <div className="flex flex-wrap gap-4">
@@ -50,22 +47,17 @@ const HeroSection = () => {
                 </a>
               </Button>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative"
-          >
+          {/* Image — visible immediately for LCP */}
+          <div className="relative">
             <div className="glass-panel p-2 mx-auto w-full max-w-[420px] sm:max-w-none">
               <div className="overflow-hidden rounded-xl aspect-square sm:aspect-[4/3] lg:aspect-square">
                 <img
                   src={heroImg}
                   alt={t("hero.heroImageAlt")}
-                  width={1024}
-                  height={1024}
+                  width={840}
+                  height={840}
                   loading="eager"
                   decoding="async"
                   fetchPriority="high"
@@ -73,7 +65,7 @@ const HeroSection = () => {
                 />
               </div>
             </div>
-            {/* Floating stat card */}
+            {/* Floating stat cards — decorative, animated after paint */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -92,7 +84,7 @@ const HeroSection = () => {
               <p className="text-2xl font-bold text-accent">+2500</p>
               <p className="text-xs text-muted-foreground">{t("hero.statPatients")}</p>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
