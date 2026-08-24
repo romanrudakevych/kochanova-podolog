@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { CheckCircle2, Clock, CalendarDays } from "lucide-react";
@@ -7,6 +6,8 @@ import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import WhenToConsiderBlock from "@/components/WhenToConsiderBlock";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
+import { RelatedServices } from "@/components/RelatedServices";
 import podologickaPedikuraPhoto from "@/assets/podologicka-pedikura.webp";
 
 const includeKeys = ["item1", "item2", "item3", "item4"] as const;
@@ -16,22 +17,12 @@ const viewport = { once: true, amount: 0.2 } as const;
 const PodologicPedicure = () => {
   const { t } = useTranslation();
 
-  useEffect(() => {
-    document.title = t("sportsPage.metaTitle");
-    const desc = document.querySelector('meta[name="description"]');
-    desc?.setAttribute("content", t("sportsPage.metaDescription"));
-
-    return () => {
-      document.title = t("meta.title");
-      desc?.setAttribute("content", t("meta.description"));
-    };
-  }, [t]);
-
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pt-24 pb-16">
+        <PageBreadcrumb />
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 -z-10 liquid-gradient" />
           <div className="absolute top-1/4 -left-32 w-[500px] h-[500px] rounded-full bg-primary/10 blur-[120px] -z-10 animate-float" />
@@ -54,6 +45,8 @@ const PodologicPedicure = () => {
                 <img
                   src={podologickaPedikuraPhoto}
                   alt={t("sportsPage.photo1.alt")}
+                  width={640}
+                  height={480}
                   className="w-full rounded-lg object-cover aspect-[4/3] bg-muted"
                   loading="lazy"
                   decoding="async"
@@ -124,6 +117,7 @@ const PodologicPedicure = () => {
             </Button>
           </motion.div>
         </section>
+        <RelatedServices />
       </main>
 
       <Footer />

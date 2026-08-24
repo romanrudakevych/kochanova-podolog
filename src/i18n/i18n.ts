@@ -1,11 +1,14 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import { hasConsentCategory } from "@/consent/storage";
 import { isSupportedLocale, LOCALE_STORAGE_KEY, SUPPORTED_LOCALES } from "./constants";
 import { getInitialLocale } from "./detectLocale";
 
 import cs from "./locales/cs.json";
 
 export async function initI18n() {
+  if (i18n.isInitialized) return i18n;
+
   const initialLocale = getInitialLocale();
 
   const resources: Record<string, { translation: typeof cs }> = {
@@ -30,10 +33,12 @@ export async function initI18n() {
   i18n.on("languageChanged", async (lng) => {
     const base = lng.split("-")[0]?.toLowerCase() ?? lng;
     if (isSupportedLocale(base)) {
-      try {
-        localStorage.setItem(LOCALE_STORAGE_KEY, base);
-      } catch {
-        /* ignore */
+      if (hasConsentCategory("preferences")) {
+        try {
+          localStorage.setItem(LOCALE_STORAGE_KEY, base);
+        } catch {
+          /* ignore */
+        }
       }
       if (base === "ru" && !i18n.hasResourceBundle("ru", "translation")) {
         const ru = await import("./locales/ru.json");

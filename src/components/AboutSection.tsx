@@ -71,7 +71,7 @@ const AboutSection = () => {
             <div className="glass-panel p-2">
               <img
                 src={avatarImg}
-                alt={t("hero.heroImageAlt")}
+                alt={t("about.photoAlt")}
                 width={640}
                 height={640}
                 loading="lazy"

@@ -18,7 +18,8 @@
   },
   "brand": {
     "accent": "Kochanova",
-    "name": ""
+    "name": "",
+    "homeLabel": "Podolog Kochanova — úvodní stránka"
   },
   "languages": {
     "label": "Jazyk",
@@ -488,6 +489,7 @@
     "p2": "Věřím, že zdravé nohy jsou základem aktivního a naplňujícího života. Každý pacient dostane individuální plán péče podle svých potřeb.",
     "p3": "Ordinace je vybavena moderní technikou a dodržuji nejpřísnější hygienické standardy, abyste se při každé návštěvě cítili v bezpečí a pohodlně.",
     "p4": "Jsem certifikovanou členkou České podologické společnosti a České podiatrické společnosti",
+    "photoAlt": "Portrét podoložky Kochanova",
     "cpsLogoAlt": "Logo České podologické společnosti",
     "cpdrsLogoAlt": "Logo České podiatrické společnosti"
   },
@@ -522,11 +524,96 @@
     "copyright": "© 2026",
     "brandAccent": "Kochanova",
     "brandRest": "",
-    "rights": "Všechna práva vyhrazena."
+    "rights": "Všechna práva vyhrazena.",
+    "servicesLabel": "Služby"
+  },
+  "relatedServices": {
+    "title": "Další služby"
+  },
+  "a11y": {
+    "skipToContent": "Přeskočit na obsah",
+    "breadcrumb": "Drobečková navigace"
+  },
+  "reservationPage": {
+    "metaTitle": "Online rezervace — Podolog Kochanova Praha",
+    "metaDescription": "Objednejte se online na podologické ošetření v Praze. Vyberte termín konzultace nebo ošetření u Podolog Kochanova.",
+    "title": "Online rezervace termínu",
+    "breadcrumb": "Rezervace",
+    "iframeTitle": "Rezervační kalendář Podolog Kochanova"
+  },
+  "cookies": {
+    "bannerTitle": "Používáme cookies",
+    "bannerBody": "Na těchto stránkách používáme cookies a podobné technologie. Některé jsou nutné k tomu, aby web fungoval. Ostatní — analytické, marketingové a preferenční — zapneme jen tehdy, když s tím budete souhlasit.",
+    "bannerLegalPrefix": "Podrobnosti najdete v",
+    "bannerLegalJoin": "a v",
+    "cookiePolicyLink": "Zásadách používání cookies",
+    "privacyPolicyLink": "Zásadách ochrany osobních údajů",
+    "acceptAll": "Povolit vše",
+    "rejectAll": "Odmítnout vše",
+    "settings": "Nastavení cookies",
+    "settingsTitle": "Nastavení cookies",
+    "settingsBody": "Vyberte, které kategorie chcete povolit. Nezbytné cookies jsou vždy zapnuté — bez nich by web nefungoval správně.",
+    "saveSettings": "Uložit nastavení",
+    "reopen": "Nastavení cookies",
+    "necessaryTitle": "Nezbytné cookies",
+    "necessaryBody": "Zajišťují základní funkce webu, například zapamatování vašeho souhlasu. Tyto cookies nelze vypnout.",
+    "analyticsTitle": "Analytické cookies",
+    "analyticsBody": "Pomáhají nám pochopit, jak stránky používáte, abychom je mohli zlepšovat. Bez vašeho souhlasu se nenačítají žádné měřicí skripty.",
+    "marketingTitle": "Marketingové cookies",
+    "marketingBody": "Slouží k měření kampaní a zobrazení relevantnějších informací. Bez vašeho souhlasu je nenačítáme.",
+    "preferencesTitle": "Preferenční cookies",
+    "preferencesBody": "Ukládají vaše volby, například vybraný jazyk, abyste je nemuseli nastavovat znovu."
+  },
+  "cookiePolicy": {
+    "metaTitle": "Zásady používání cookies — Podolog Kochanova",
+    "metaDescription": "Jak web Podolog Kochanova používá cookies a podobné technologie, jaké kategorie nabízíme a jak můžete svůj souhlas kdykoli změnit.",
+    "title": "Zásady používání cookies",
+    "updated": "Poslední aktualizace: 24. 8. 2026",
+    "intro": "Tyto zásady vysvětlují, jaké cookies a podobné technologie používáme na webu Podolog Kochanova, k čemu slouží a jak je můžete spravovat. Souhlas můžete kdykoli změnit přes odkaz Nastavení cookies v zápatí webu.",
+    "necessaryTitle": "Nezbytné cookies",
+    "necessaryBody": "Ukládáme záznam o vašem souhlasu (cookie podolog_consent a údaj v prohlížeči podolog-cookie-consent), abychom si pamatovali vaši volbu po dobu 6 měsíců a nenačítali nepovolené služby. Bez těchto údajů by lišta se souhlasem vyskakovala znovu při každé návštěvě.",
+    "analyticsTitle": "Analytické cookies",
+    "analyticsBody": "Pokud je povolíte, můžeme načíst měření návštěvnosti, například Google Analytics, a to pouze s vaším souhlasem. Tyto nástroje se nespustí dříve, než kliknete na Povolit vše nebo výslovně zapnete analytické cookies. Pokud analytický nástroj na webu aktuálně není nastavený, vaše volba se uloží a uplatní se, jakmile měření zapojíme.",
+    "marketingTitle": "Marketingové cookies",
+    "marketingBody": "Pokud je povolíte, můžeme načíst marketingové měření, například Meta Pixel. Bez souhlasu se tyto skripty nenačítají. Stejně jako u analytiky se volba uloží i v případě, že marketingový nástroj ještě není aktivní.",
+    "preferencesTitle": "Preferenční cookies",
+    "preferencesBody": "Když je povolíte, uložíme si váš jazyk webu (čeština nebo ruština) v prohlížeči, abyste ho nemuseli vybírat při každé návštěvě. Pokud je odmítnete, jazyk platí jen po dobu aktuální návštěvy.",
+    "thirdPartyTitle": "Služby třetích stran",
+    "thirdPartyBody": "Stránka rezervace načítá rezervační kalendář od společnosti Noona. Ten může nastavovat vlastní cookies, které spravuje poskytovatel služby, aby bylo možné vybrat termín. Odkazy na Instagram nebo telefonní hovory vedou mimo náš web a řídí se pravidly dané služby.",
+    "manageTitle": "Jak změnit volbu",
+    "manageBody": "Klikněte na Nastavení cookies v zápatí nebo na tlačítko v levém dolním rohu. Můžete povolit vše, odmítnout vše kromě nezbytných cookies, nebo vybrat kategorie zvlášť. Souhlas uchováváme 6 měsíců, poté se zeptáme znovu.",
+    "contactTitle": "Dotazy",
+    "contactBody": "Pokud máte k cookies otázky, napište na podolog.kochanova@gmail.com nebo zavolejte na +420 777 828 296.",
+    "privacyTitle": "Ochrana osobních údajů",
+    "privacyBody": "Informace o tom, kdo údaje spravuje a jaká máte práva, najdete v <privacy>Zásadách ochrany osobních údajů</privacy>."
+  },
+  "privacyPolicy": {
+    "metaTitle": "Zásady ochrany osobních údajů — Podolog Kochanova",
+    "metaDescription": "Jak Podolog Kochanova zpracovává osobní údaje návštěvníků webu a klientů, včetně rezervací, komunikace a cookies.",
+    "title": "Zásady ochrany osobních údajů",
+    "updated": "Poslední aktualizace: 24. 8. 2026",
+    "intro": "Tyto zásady popisují, jak zpracováváme osobní údaje, když navštívíte web Podolog Kochanova nebo se objednáte na ošetření. Píšeme je srozumitelně — pokud něco nebude jasné, ozvěte se, ráda to vysvětlím.",
+    "controllerTitle": "Kdo údaje spravuje",
+    "controllerBody": "Správcem údajů je Podolog Kochanova, ordinace na adrese Na Poříčí 1041/12, YMCA, Praha.\nTelefon: +420 777 828 296\nE-mail: podolog.kochanova@gmail.com",
+    "dataTitle": "Jaké údaje zpracováváme",
+    "dataBody": "Přes web můžeme zpracovat údaje, které nám sami poskytnete při objednání nebo komunikaci: jméno, telefon, e-mail a informace k termínu. Web si také může uložit volbu cookies a jazyka. Zdravotní údaje z ošetření evidujeme v ordinaci, nikoli ve veřejné části tohoto webu.",
+    "purposesTitle": "Proč údaje zpracováváme",
+    "purposesBody": "Údaje používáme k vyřízení rezervace, komunikaci ohledně termínu, splnění právních povinností a — jen se souhlasem — k měření návštěvnosti nebo marketingu. Právním základem je plnění smlouvy nebo jednání o ní, oprávněný zájem na provozu webu a souhlas u volitelných cookies.",
+    "recipientsTitle": "Kdo k údajům může mít přístup",
+    "recipientsBody": "Rezervace probíhá přes službu Noona, která termíny zpracovává jako samostatný poskytovatel. Dále mohou údaje zpracovávat poskytovatel hostingu webu a — pouze se souhlasem — nástroje pro analytiku nebo marketing. Instagram využíváme jen pokud na něj sami kliknete.",
+    "retentionTitle": "Jak dlouho údaje uchováváme",
+    "retentionBody": "Údaje k rezervacím a péči uchováváme po dobu nutnou k poskytnutí služby a splnění zákonných povinností. Souhlas s cookies uchováváme 6 měsíců. Preferenci jazyka jen po dobu, než ji změníte nebo cookies odmítnete.",
+    "rightsTitle": "Vaše práva",
+    "rightsBody": "Máte právo na přístup k údajům, opravu, výmaz, omezení zpracování, námitku a přenositelnost tam, kde to zákon umožňuje. Souhlas s volitelnými cookies můžete kdykoli odvolat. Stížnost můžete podat u Úřadu pro ochranu osobních údajů (uoou.gov.cz).",
+    "cookiesTitle": "Cookies",
+    "cookiesBody": "Podrobnosti o cookies a podobných technologiích jsou v samostatných zásadách.",
+    "cookiesLink": "Přejít na <cookies>Zásady používání cookies</cookies>."
   },
   "notFound": {
     "title": "404",
     "message": "Jejda! Stránka nenalezena",
-    "homeLink": "Zpět na úvod"
+    "homeLink": "Zpět na úvod",
+    "metaTitle": "Stránka nenalezena — Podolog Kochanova",
+    "metaDescription": "Tato stránka na webu Podolog Kochanova neexistuje. Vraťte se na úvod nebo si vyberte službu v menu."
   }
 }

@@ -12,14 +12,16 @@ const ContactSection = lazy(() => import("@/components/ContactSection"));
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
-    <HeroSection />
-    <ServicesSection />
-    <StatsSection />
-    <AboutSection />
-    <Suspense fallback={null}>
-      <CertificatesSection />
-      <ContactSection />
-    </Suspense>
+    <main id="main-content">
+      <HeroSection />
+      <ServicesSection />
+      <StatsSection />
+      <AboutSection />
+      <Suspense fallback={null}>
+        <CertificatesSection />
+        <ContactSection />
+      </Suspense>
+    </main>
     <Footer />
   </div>
 );

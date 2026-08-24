@@ -42,6 +42,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="text-xl font-bold text-foreground">
           <span className="text-primary">{t("brand.accent")}</span>
+          <span className="sr-only">{t("brand.homeLabel")}</span>
         </Link>
 
         {/* Desktop */}

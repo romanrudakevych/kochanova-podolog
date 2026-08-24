@@ -1,0 +1,3 @@
+# Prerendered route files (folder/index.html) are served first.
+# Unknown URLs should not look like a 200 homepage copy.
+/*    /404.html   404

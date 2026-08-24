@@ -71,7 +71,9 @@ const ContactSection = () => {
                         {t(item.valueKey)}
                       </a>
                     ) : (
-                      <p className="text-foreground font-medium break-words">{t(item.valueKey)}</p>
+                      <address className="text-foreground font-medium break-words not-italic">
+                        {t(item.valueKey)}
+                      </address>
                     )}
                   </div>
                 </div>
