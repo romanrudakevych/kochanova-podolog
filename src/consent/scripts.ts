@@ -43,7 +43,7 @@ function loadGoogleAnalytics() {
 
   injectScript(GA_SCRIPT_ID, `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`);
   w.gtag("js", new Date());
-  w.gtag("config", id, { anonymize_ip: true });
+  w.gtag("config", id, { anonymize_ip: true, send_page_view: false });
 }
 
 function disableGoogleAnalytics() {
@@ -97,4 +97,16 @@ export function applyConsentScripts(consent: ConsentState | null) {
   } else {
     disableMetaPixel();
   }
+}
+
+export function trackPageView(pathWithSearch: string) {
+  if (!gaMeasurementId() || typeof window === "undefined") return;
+  const w = window as Window & { gtag?: (...args: unknown[]) => void };
+  if (typeof w.gtag !== "function") return;
+
+  w.gtag("event", "page_view", {
+    page_path: pathWithSearch || "/",
+    page_location: window.location.href,
+    page_title: document.title,
+  });
 }

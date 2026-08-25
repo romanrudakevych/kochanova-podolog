@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
-import { applyConsentScripts } from "./scripts";
+import { describe, expect, it, vi } from "vitest";
+import { applyConsentScripts, trackPageView } from "./scripts";
 
 describe("consent-gated scripts", () => {
   it("does not inject analytics or marketing scripts before consent", () => {
@@ -19,5 +19,12 @@ describe("consent-gated scripts", () => {
     });
     expect(document.getElementById("consent-ga4")).toBeNull();
     expect(document.getElementById("consent-meta-pixel")).toBeNull();
+  });
+
+  it("does not send page views when no measurement ID is configured", () => {
+    const gtag = vi.fn();
+    (window as Window & { gtag?: (...args: unknown[]) => void }).gtag = gtag;
+    trackPageView("/rezervace");
+    expect(gtag).not.toHaveBeenCalled();
   });
 });

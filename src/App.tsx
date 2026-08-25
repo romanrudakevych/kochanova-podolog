@@ -10,6 +10,7 @@ import { SkipToContent } from "@/components/SkipToContent";
 import { CookieConsent } from "@/components/CookieConsent";
 import { ConsentProvider } from "@/consent/ConsentContext";
 import { PersistLocalePreference } from "@/consent/PersistLocalePreference";
+import { AnalyticsPageViews } from "@/consent/AnalyticsPageViews";
 import ScrollToTop from "@/components/ScrollToTop";
 import { COOKIE_POLICY_PATH, PRIVACY_POLICY_PATH } from "@/seo/routes";
 import Index from "./pages/Index.tsx";
@@ -43,6 +44,7 @@ const App = () => (
           <PersistLocalePreference />
           <SkipToContent />
           <SeoHead />
+          <AnalyticsPageViews />
           <CookieConsent />
           <ScrollToTop />
           <Suspense fallback={null}>
