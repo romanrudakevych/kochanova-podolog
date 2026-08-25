@@ -541,6 +541,15 @@
     "breadcrumb": "Rezervace",
     "iframeTitle": "Rezervační kalendář Podolog Kochanova"
   },
+  "reservationSuccessPage": {
+    "metaTitle": "Rezervace potvrzena — Podolog Kochanova",
+    "metaDescription": "Vaše rezervace u Podolog Kochanova byla úspěšně odeslána. Těšíme se na vás v ordinaci v Praze.",
+    "breadcrumb": "Potvrzení rezervace",
+    "title": "Rezervace byla úspěšná",
+    "body": "Děkuji za objednání. Potvrzení termínu vám přijde e-mailem. Pokud se cokoliv změní, ozvěte se mi, ráda termín upravím.",
+    "homeCta": "Zpět na úvod",
+    "bookAnother": "Nová rezervace"
+  },
   "cookies": {
     "bannerTitle": "Používáme cookies",
     "bannerBody": "Na těchto stránkách používáme cookies a podobné technologie. Některé jsou nutné k tomu, aby web fungoval. Ostatní — analytické, marketingové a preferenční — zapneme jen tehdy, když s tím budete souhlasit.",

@@ -12,7 +12,7 @@ import { ConsentProvider } from "@/consent/ConsentContext";
 import { PersistLocalePreference } from "@/consent/PersistLocalePreference";
 import { AnalyticsPageViews } from "@/consent/AnalyticsPageViews";
 import ScrollToTop from "@/components/ScrollToTop";
-import { COOKIE_POLICY_PATH, PRIVACY_POLICY_PATH } from "@/seo/routes";
+import { COOKIE_POLICY_PATH, PRIVACY_POLICY_PATH, RESERVATION_SUCCESS_PATH } from "@/seo/routes";
 import Index from "./pages/Index.tsx";
 
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
@@ -30,6 +30,7 @@ const NailExtensionClipFlow = lazy(() => import("./pages/NailExtensionClipFlow.t
 const TamponadeTreatment = lazy(() => import("./pages/TamponadeTreatment.tsx"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy.tsx"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.tsx"));
+const ReservationSuccess = lazy(() => import("./pages/ReservationSuccess.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -51,6 +52,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/rezervace" element={<Reservation />} />
+              <Route path={RESERVATION_SUCCESS_PATH} element={<ReservationSuccess />} />
               <Route path="/podologicka-konzultace-praha" element={<PodologicConsultation />} />
               <Route path="/zarostly-nehet-praha" element={<IngrownNailTreatment />} />
               <Route path="/bradavice-praha" element={<WartTreatment />} />

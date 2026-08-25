@@ -11,6 +11,8 @@ describe("SEO routes", () => {
     expect(INDEXABLE_PATHS).toContain("/");
     expect(INDEXABLE_PATHS).toContain("/zarostly-nehet-praha");
     expect(INDEXABLE_PATHS).toContain("/zasady-pouzivani-cookies");
+    expect(INDEXABLE_PATHS).not.toContain("/reservation-success");
+    expect(matchSeoRoute("/reservation-success")?.index).toBe(false);
     expect(matchSeoRoute("/neexistuje")).toBeUndefined();
   });
 

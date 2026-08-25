@@ -19,6 +19,7 @@ export const HOME_PATH = "/";
 export const COOKIE_POLICY_PATH = "/zasady-pouzivani-cookies";
 export const PRIVACY_POLICY_PATH = "/zasady-ochrany-osobnich-udaju";
 export const RESERVATION_PATH = "/rezervace";
+export const RESERVATION_SUCCESS_PATH = "/reservation-success";
 
 export const SEO_ROUTES: SeoRoute[] = [
   {
@@ -34,6 +35,14 @@ export const SEO_ROUTES: SeoRoute[] = [
     descriptionKey: "reservationPage.metaDescription",
     jsonLd: "reservation",
     breadcrumbKey: "reservationPage.breadcrumb",
+  },
+  {
+    path: RESERVATION_SUCCESS_PATH,
+    titleKey: "reservationSuccessPage.metaTitle",
+    descriptionKey: "reservationSuccessPage.metaDescription",
+    jsonLd: "webPage",
+    breadcrumbKey: "reservationSuccessPage.breadcrumb",
+    index: false,
   },
   {
     path: "/podologicka-konzultace-praha",
