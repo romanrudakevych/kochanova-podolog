@@ -98,6 +98,38 @@ function writeSitemap(distDir: string, siteUrl: string) {
   fs.writeFileSync(path.join(distDir, "sitemap.xml"), xml, "utf8");
 }
 
+export function googleTagPlugin(measurementId: string): Plugin {
+  const id = measurementId.trim();
+
+  return {
+    name: "google-tag",
+    transformIndexHtml(html) {
+      if (!id || html.includes("googletagmanager.com/gtag/js")) return html;
+      if (!/^G-[A-Z0-9]+$/i.test(id)) return html;
+
+      return html.replace(
+        "</head>",
+        `    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${id}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+      gtag('js', new Date());
+      gtag('config', '${id}', { send_page_view: false, anonymize_ip: true });
+    </script>
+  </head>`,
+      );
+    },
+  };
+}
+
 export function seoPrerenderPlugin(siteUrl: string): Plugin {
   const origin = normalizeSiteUrl(siteUrl);
 

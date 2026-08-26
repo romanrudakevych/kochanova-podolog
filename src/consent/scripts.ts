@@ -29,11 +29,15 @@ function injectScript(id: string, src: string, async = true) {
   document.head.appendChild(script);
 }
 
+function gtagWindow() {
+  return window as Window & { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void };
+}
+
 function loadGoogleAnalytics() {
   const id = gaMeasurementId();
   if (!id || typeof window === "undefined") return;
 
-  const w = window as Window & { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void };
+  const w = gtagWindow();
   w.dataLayer = w.dataLayer ?? [];
   w.gtag =
     w.gtag ??
@@ -41,17 +45,19 @@ function loadGoogleAnalytics() {
       w.dataLayer!.push(args);
     };
 
-  injectScript(GA_SCRIPT_ID, `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`);
-  w.gtag("js", new Date());
-  w.gtag("config", id, { anonymize_ip: true, send_page_view: false });
+  const alreadyLoaded = Boolean(document.querySelector('script[src*="googletagmanager.com/gtag/js"]'));
+  if (!alreadyLoaded) {
+    injectScript(GA_SCRIPT_ID, `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`);
+    w.gtag("js", new Date());
+    w.gtag("config", id, { anonymize_ip: true, send_page_view: false });
+  }
+
+  w.gtag("consent", "update", { analytics_storage: "granted" });
 }
 
 function disableGoogleAnalytics() {
-  const id = gaMeasurementId();
-  if (!id || typeof window === "undefined") return;
-  const w = window as Window & { [`ga-disable-${string}`]?: boolean; gtag?: (...args: unknown[]) => void };
-  w[`ga-disable-${id}`] = true;
-  w.gtag?.("consent", "update", { analytics_storage: "denied" });
+  if (typeof window === "undefined") return;
+  gtagWindow().gtag?.("consent", "update", { analytics_storage: "denied" });
 }
 
 function loadMetaPixel() {
@@ -79,6 +85,15 @@ function disableMetaPixel() {
   w.fbq?.("consent", "revoke");
 }
 
+function updateGoogleAdsConsent(granted: boolean) {
+  if (typeof window === "undefined") return;
+  gtagWindow().gtag?.("consent", "update", {
+    ad_storage: granted ? "granted" : "denied",
+    ad_user_data: granted ? "granted" : "denied",
+    ad_personalization: granted ? "granted" : "denied",
+  });
+}
+
 /**
  * Loads or suppresses third-party trackers according to stored consent.
  * Scripts are never injected before the matching category is granted.
@@ -94,8 +109,10 @@ export function applyConsentScripts(consent: ConsentState | null) {
 
   if (consent?.marketing) {
     loadMetaPixel();
+    updateGoogleAdsConsent(true);
   } else {
     disableMetaPixel();
+    updateGoogleAdsConsent(false);
   }
 }
 
