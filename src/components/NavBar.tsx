@@ -1,21 +1,35 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { CalendarDays, Menu, PhoneCall, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
   const navLinks = [
-    { labelKey: "nav.home", href: "#hero" },
-    { labelKey: "nav.services", href: "#services" },
-    // { labelKey: "nav.gallery", href: "#gallery" },
-    { labelKey: "nav.about", href: "#about" },
-    { labelKey: "nav.contact", href: "#contact" },
+    { labelKey: "nav.home", href: "/#hero" },
+    { labelKey: "nav.services", href: "/#services" },
+    // { labelKey: "nav.gallery", href: "/#gallery" },
+    { labelKey: "nav.about", href: "/#about" },
+    { labelKey: "nav.contact", href: "/#contact" },
   ];
+
+  const phoneButton = (
+    <Button
+      variant="ghost"
+      size="sm"
+      className="h-9 w-9 shrink-0 px-0 text-muted-foreground"
+      asChild
+    >
+      <a href="tel:420777828296" aria-label={t("contact.phoneLabel")}>
+        <PhoneCall className="h-4 w-4" aria-hidden />
+      </a>
+    </Button>
+  );
 
   return (
     <motion.nav
@@ -26,9 +40,10 @@ const Navbar = () => {
       aria-label={t("nav.landmark")}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#hero" className="text-xl font-bold text-foreground">
+        <Link to="/" className="text-xl font-bold text-foreground">
           <span className="text-primary">{t("brand.accent")}</span>
-        </a>
+          <span className="sr-only">{t("brand.homeLabel")}</span>
+        </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-6 lg:gap-8">
@@ -42,10 +57,12 @@ const Navbar = () => {
             </a>
           ))}
           <LanguageSwitcher />
+          {phoneButton}
           <Link
             to="/rezervace"
             className="inline-flex h-9 items-center rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-[0_0_20px_-4px_hsl(var(--glass-glow)/0.5)] hover:shadow-[0_0_30px_-4px_hsl(var(--glass-glow)/0.7)] transition-all duration-300"
           >
+            <CalendarDays className="mr-2 h-4 w-4" aria-hidden />
             {t("nav.bookNow")}
           </Link>
         </div>
@@ -53,6 +70,7 @@ const Navbar = () => {
         {/* Mobile: language + menu */}
         <div className="flex md:hidden items-center gap-1">
           <LanguageSwitcher />
+          {phoneButton}
           <button
             type="button"
             onClick={() => setOpen(!open)}
@@ -92,6 +110,7 @@ const Navbar = () => {
                 onClick={() => setOpen(false)}
                 className="inline-flex h-9 items-center justify-center rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground w-fit"
               >
+                <CalendarDays className="mr-2 h-4 w-4" aria-hidden />
                 {t("nav.bookNow")}
               </Link>
             </div>

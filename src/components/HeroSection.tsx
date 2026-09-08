@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowDown } from "lucide-react";
+import { CalendarDays, ArrowDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImg from "@/assets/hero.webp";
+
+const heroImg = "/images/hero.webp";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -19,12 +20,8 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 pt-24 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Text */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+          {/* Text — no entrance animation to avoid delaying LCP */}
+          <div>
             <span className="inline-block glass-panel px-4 py-1.5 text-xs font-semibold tracking-wider text-primary uppercase mb-6">
               {t("hero.eyebrow")}
             </span>
@@ -33,13 +30,13 @@ const HeroSection = () => {
               <br />
               {t("hero.titleLine2For")}
               <br />
-               <span className="text-primary">{t("hero.titleHighlight")}</span>
+              <span className="text-primary">{t("hero.titleHighlight")}</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg mb-8 leading-relaxed">{t("hero.subtitle")}</p>
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg" className="rounded-xl text-base" asChild>
                 <Link to="/rezervace">
-                  <Phone className="mr-2 h-4 w-4" aria-hidden />
+                  <CalendarDays className="mr-2 h-4 w-4" aria-hidden />
                   {t("hero.bookAppointment")}
                 </Link>
               </Button>
@@ -50,19 +47,27 @@ const HeroSection = () => {
                 </a>
               </Button>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative"
-          >
-            <div className="glass-panel p-2">
-              <img src={heroImg} alt={t("hero.heroImageAlt")} className="w-full rounded-xl object-cover" />
+          {/* Image — visible immediately for LCP */}
+          <div className="relative">
+            <div className="glass-panel p-2 mx-auto w-full max-w-[420px] sm:max-w-none">
+              <div className="overflow-hidden rounded-xl aspect-square sm:aspect-[4/3] lg:aspect-square">
+                <img
+                  src={heroImg}
+                  srcSet="/images/hero-480.webp 480w, /images/hero-640.webp 640w, /images/hero.webp 840w"
+                  sizes="(min-width: 1024px) 45vw, (min-width: 640px) 90vw, 404px"
+                  alt={t("hero.heroImageAlt")}
+                  width={840}
+                  height={840}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </div>
-            {/* Floating stat card */}
+            {/* Floating stat cards — decorative, animated after paint */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -81,7 +86,7 @@ const HeroSection = () => {
               <p className="text-2xl font-bold text-accent">+2500</p>
               <p className="text-xs text-muted-foreground">{t("hero.statPatients")}</p>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

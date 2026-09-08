@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Kochanova Foot Institute — profesionální podologie v Praze",
-    "description": "Profesionální podologická klinika v Praze. Pedikúra, diabetická noha, biomechanická diagnostika a další. Objednejte se ještě dnes.",
-    "ogTitle": "Kochanova — profesionální podologie",
-    "ogDescription": "Odborná péče o vaše nohy bez bolesti. Personalizovaná podologická léčba s moderní technologií."
+    "title": "Podolog Kochanova — profesionální podologie v Praze",
+    "description": "Podolog v Praze se specializací na ošetření zarostlých nehtů, bradavic, kuřích ok a plísně nehtů. Profesionální péče s individuálním přístupem. Objednejte se na konzultaci.",
+    "ogTitle": "Podolog Kochanova - profesionální podologie v Praze",
+    "ogDescription": "Podolog v Praze se specializací na ošetření zarostlých nehtů, bradavic, kuřích ok a plísně nehtů. Profesionální péče s individuálním přístupem. Objednejte se na konzultaci."
   },
   "nav": {
     "landmark": "Hlavní navigace",
@@ -18,7 +18,8 @@
   },
   "brand": {
     "accent": "Kochanova",
-    "name": ""
+    "name": "",
+    "homeLabel": "Podolog Kochanova — úvodní stránka"
   },
   "languages": {
     "label": "Jazyk",
@@ -45,33 +46,407 @@
   "services": {
     "eyebrow": "Služby",
     "title": "Řešení pro každou potřebu",
-    "subtitle": "Nabízíme široké spektrum podologických výkonů v nejvyšší kvalitě a s moderní technologií.",
+    "subtitle": "Nabízím široké spektrum podologických výkonů v nejvyšší kvalitě a s moderní technologií.",
+    "consultation": {
+      "title": "Podologická konzultace",
+      "desc": "Odborné posouzení stavu chodidel, doporučení léčby a individuální plán podologické péče.",
+      "price": "500 Kč",
+      "duration": "30 min"
+    },
     "chiropody": {
-      "title": "Bradavice",
-      "desc": "Profesionální diagnostika a léčba bradavic na chodidlech bezpečnými a efektivními metodami s důrazem na prevenci opakování."
+      "title": "Ošetření bradavic",
+      "desc": "Profesionální diagnostika a léčba bradavic na chodidlech bezpečnými a efektivními metodami s důrazem na prevenci opakování.",
+      "price": "600 Kč",
+      "duration": "30 min"
     },
     "ingrown": {
-      "title": "Zarůstající nehty",
-      "desc": "Profesionální korekce onychokryptózy s minimálně invazivními technikami."
+      "title": "Ošetření zarostlého nehtu",
+      "desc": "Profesionální korekce onychokryptózy s minimálně invazivními technikami.",
+      "price": "500 Kč",
+      "duration": "30 min"
     },
     "diabetic": {
-      "title": "Otlaky",
-      "desc": "Odborné ošetření otlaků na chodidlech způsobených tlakem a třením obuvi, včetně prevence jejich opakování."
+      "title": "Ošetření kuřího oka",
+      "desc": "Odborné ošetření kuřího oka a meziprstních mozolů na chodidlech včetně doporučení, jak předcházet jejich opakování.",
+      "price": "350 Kč",
+      "duration": "30 min"
     },
     "biomechanical": {
-      "title": "Praskající paty",
-      "desc": "Ošetření suchých a popraskaných patek včetně hydratace a doporučení pro dlouhodobou péči o kůži chodidel."
+      "title": "Nehtové rovnátko (titanová nit)",
+      "desc": "Rovnání nehtů metodou titanové niti pro korekci tvaru nehtu a prevenci zarůstání s dlouhodobým účinkem.",
+      "price": "1 200 Kč",
+      "duration": "30 min"
     },
     "sports": {
-      "title": "Sportovní podologie",
-      "desc": "Prevence a léčba sportovních úrazů nohou pro sportovce všech úrovní."
+      "title": "Podologická pedikúra",
+      "desc": "Přístrojová podologická pedikúra pro zdravé nehty a kůži chodidel včetně odborného ošetření a doporučení péče.",
+      "price": "1 000 Kč",
+      "duration": "60 min"
+    },
+    "kart": {
+      "title": "Kart pedikúra",
+      "desc": "Specializovaná KART pedikúra pro náročnější stavy chodidel s důrazem na zdraví nehtů, kůže a dlouhodobou prevenci.",
+      "price": "1 500 – 1 900 Kč",
+      "duration": "90 min"
     },
     "aesthetic": {
-      "title": "Plísně nehtů",
-      "desc": "Diagnostika a léčba plísňových onemocnění nehtů na nohou moderními metodami pro zdravý a estetický vzhled."
+      "title": "Ošetření plísně nehtu (Onychomykóza)",
+      "desc": "Diagnostika a léčba plísňových onemocnění nehtů na nohou moderními metodami pro zdravý a estetický vzhled.",
+      "price": "350 – 500 Kč",
+      "duration": "30 min"
+    },
+    "okluze": {
+      "title": "Okluze",
+      "desc": "Odborná okluzní terapie pro léčbu vybraných kožních a nehtových onemocnění s cílem zlepšit hojení a účinnost léčby.",
+      "price": "350 Kč",
+      "duration": "30 min"
+    },
+    "clipflow": {
+      "title": "Nadstavba nehtu Clip Flow",
+      "desc": "Profesionální nadstavba nehtu systémem Clip Flow pro obnovu délky a tvaru nehtové ploténky s důrazem na zdraví nehtu.",
+      "price": "120 Kč",
+      "duration": "30 min"
+    },
+    "tamponada": {
+      "title": "Tamponáda",
+      "desc": "Odborná tamponáda při ošetření zarostlého nehtu pro ochranu, úlevu od tlaku a podporu správného hojení.",
+      "price": "60 Kč",
+      "duration": "30 min"
     },
     "viewPriceList": "Zobrazit ceník",
     "priceListAlt": "Ceník podologických služeb"
+  },
+  "consultationPage": {
+    "metaTitle": "Podologická konzultace v Praze — Kochanova",
+    "metaDescription": "Odborná podologická konzultace v centru Prahy. Komplexní vyšetření chodidel, diagnostika a individuální plán péče.",
+    "eyebrow": "Služby",
+    "title": "Podologická konzultace v Praze",
+    "subtitle": "První krok ke zdravým chodidlům — odborné posouzení, jasná doporučení a plán péče šitý na míru vašim potřebám.",
+    "priceLabel": "Cena konzultace",
+    "price": "500 Kč",
+    "p1": "Podologická konzultace je základní vyšetření, při kterém podolog detailně posoudí stav vašich chodidel, nehtů a kůže. V ordinaci v centru Prahy vám poskytnu čas na vysvětlení obtíží a navrhnu další postup léčby.",
+    "p2": "Konzultace je vhodná při bolestech chodidel, zarůstajících nehtech, otlacích, plísních, praskajících patách i při preventivní kontrole. Každý pacient odchází s jasným plánem a doporučením další péče.",
+    "whenToConsiderTitle": "Kdy zvážit podologickou konzultaci:",
+    "whenToConsider": {
+      "item1": "Bolest či nepohodlí při chůzi a dlouhodobý tlak v okolí nehtů",
+      "item2": "Viditelné zhrubnutí, praskání nebo olupování kůže",
+      "item3": "Časté otlaky a drobné bolesti při chůzi",
+      "item4": "Změna barvy nebo tvaru nehtů",
+      "item5": "Pálení nebo svědění v oblasti chodidel"
+    },
+    "includesTitle": "Co konzultace zahrnuje",
+    "includes": {
+      "item1": "Komplexní vyšetření chodidel, nehtů a kůže",
+      "item2": "Odbornou diagnostiku a vysvětlení příčin obtíží",
+      "item3": "Individuální plán péče a doporučení léčby",
+      "item4": "Možnost domluvit následné ošetření nebo další výkony"
+    },
+    "photo1": {
+      "alt": "Podolog provádí odborné vyšetření chodidla v ordinaci"
+    },
+    "bookCta": "Objednat konzultaci"
+  },
+  "ingrownPage": {
+    "metaTitle": "Ošetření zarostlého nehtu v Praze — Kochanova",
+    "metaDescription": "Profesionální ošetření zarostlého nehtu v centru Prahy. Bezpečná korekce onychokryptózy s minimálně invazivními technikami a doporučením prevence.",
+    "eyebrow": "Služby",
+    "title": "Ošetření zarostlého nehtu v Praze",
+    "subtitle": "Rychlá úleva od bolesti a odborná péče o zarostlý nehet — bezpečné ošetření s důrazem na komfort a prevenci opakování.",
+    "priceLabel": "Cena ošetření",
+    "price": "500 Kč",
+    "p1": "Zarostlý nehet (onychokryptóza) je bolestivý stav, při kterém okraj nehtu tlačí do okolní kůže. V ordinaci v centru Prahy provedu šetrné ošetření, odstraním tlak a navrhnu další postup péče podle závažnosti případu.",
+    "p2": "Ošetření je vhodné při akutní bolesti, zarudnutí, otoku nebo opakovaných potížích s nehtem. Cílem je rychlá úleva, odborná korekce a doporučení, jak problémům předcházet v budoucnu.",
+    "whenToConsiderTitle": "Kdy zvážit ošetření zarostlého nehtu:",
+    "whenToConsider": {
+      "item1": "Bolest při chůzi nebo tlaku na okraj nehtu",
+      "item2": "Zarudnutí, otok nebo citlivost v okolí nehtu",
+      "item3": "Opakované zarůstání stejného nehtu",
+      "item4": "Zánět nebo výtok z okolí nehtu",
+      "item5": "Potíže s obuví kvůli bolesti nehtu"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření postiženého nehtu a okolní kůže",
+      "item2": "Šetrnou korekci zarostlého okraje nehtu",
+      "item3": "Dezinfekci a doporučení domácí péče",
+      "item4": "Rady k prevenci opětovného zarůstání nehtu"
+    },
+    "photo1": {
+      "alt": "Podolog ošetřuje zarostlý nehet v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
+  },
+  "chiropodyPage": {
+    "metaTitle": "Ošetření bradavice v Praze — Kochanova",
+    "metaDescription": "Profesionální ošetření bradavic na chodidlech v centru Prahy. Bezpečná diagnostika a léčba s důrazem na prevenci opakování.",
+    "eyebrow": "Služby",
+    "title": "Ošetření bradavice v Praze",
+    "subtitle": "Odborná diagnostika a šetrná léčba bradavic na chodidlech — bezpečné metody s cílem odstranit problém a předcházet jeho návratu.",
+    "priceLabel": "Cena ošetření",
+    "price": "600 Kč",
+    "p1": "Bradavice na chodidlech jsou běžný kožní problém způsobený virem HPV. V ordinaci v centru Prahy nejprve posoudím typ a rozsah postižení a navrhnu vhodný způsob léčby podle stavu bradavice i vašich potřeb.",
+    "p2": "Ošetření je vhodné při bolestivých, rostoucích nebo opakovaně se objevujících bradavicích na chodidlech. Cílem je bezpečné odstranění bradavice, úleva od obtíží a doporučení, jak předcházet šíření infekce.",
+    "whenToConsiderTitle": "Kdy zvážit ošetření bradavice:",
+    "whenToConsider": {
+      "item1": "Bolestivá bradavice na chodidle při chůzi",
+      "item2": "Rostoucí nebo šířící se bradavice",
+      "item3": "Opakovaný výskyt bradavice na stejném místě",
+      "item4": "Změna vzhledu nebo velikosti bradavice",
+      "item5": "Potíže při sportu nebo nošení obuvi"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření bradavice a okolní kůže na chodidle",
+      "item2": "Odbornou diagnostiku a výběr vhodné metody léčby",
+      "item3": "Profesionální ošetření bradavice v sterilním prostředí",
+      "item4": "Doporučení domácí péče a prevence opakování"
+    },
+    "photo1": {
+      "alt": "Podolog ošetřuje bradavici na chodidle v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
+  },
+  "diabeticPage": {
+    "metaTitle": "Ošetření kuřího oka v Praze — Kochanova",
+    "metaDescription": "Profesionální ošetření kuřího oka a meziprstních mozolů v centru Prahy. Šetrná léčba s důrazem na úlevu od bolesti a prevenci opakování.",
+    "eyebrow": "Služby",
+    "title": "Ošetření kuřího oka v Praze",
+    "subtitle": "Rychlá úleva od bolesti a odborná péče o kuří oko — šetrné ošetření s doporučením, jak problémům předcházet.",
+    "priceLabel": "Cena ošetření kuřího oka <strong>bez pedikúry</strong>",
+    "price": "350 Kč",
+    "priceLabelWithPedicure": "Cena ošetření kuřího oka <strong>při pedikúre</strong>",
+    "priceWithPedicure": "150 Kč",
+    "p1": "Kuří oko je bolestivá mozolnatá změna na chodidle, která vzniká vlivem opakovaného tlaku a tření. V ordinaci v centru Prahy posoudím postižené místo a provedu šetrné ošetření s cílem odstranit tlak a zmírnit obtíže.",
+    "p2": "Ošetření je vhodné při bolestivém kuřím oku, meziprstních mozolech nebo při opakovaných potížích způsobených obuví či zatížením chodidla. Cílem je úleva od bolesti, odborná korekce a doporučení pro dlouhodobou prevenci.",
+    "whenToConsiderTitle": "Kdy zvážit ošetření kuřího oka:",
+    "whenToConsider": {
+      "item1": "Ostrá bolest při došlapu na chodidlo",
+      "item2": "Tvrdá mozolnatá změna v tlakovém místě",
+      "item3": "Meziprstní mozoly způsobující bolest",
+      "item4": "Opakovaný výskyt na stejném místě",
+      "item5": "Bolest zhoršená obuví nebo zatížením"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření kuřího oka a okolní kůže na chodidle",
+      "item2": "Šetrné ošetření a odstranění bolestivého tlaku",
+      "item3": "Dezinfekci a doporučení domácí péče",
+      "item4": "Rady k výběru obuvi a prevenci opakování"
+    },
+    "photo1": {
+      "alt": "Podolog ošetřuje kuří oko na chodidle v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
+  },
+  "biomechanicalPage": {
+    "metaTitle": "Nehtové rovnátko v Praze — Kochanova",
+    "metaDescription": "Profesionální aplikace nehtového rovnátka metodou titanové niti v centru Prahy. Korekce tvaru nehtu a prevence zarůstání s dlouhodobým účinkem.",
+    "eyebrow": "Služby",
+    "title": "Nehtové rovnátko v Praze",
+    "subtitle": "Odborná korekce tvaru nehtu metodou titanové niti — šetrné řešení pro zarůstající nebo deformované nehty s dlouhodobým účinkem.",
+    "priceLabel": "Cena ošetření",
+    "price": "1 200 Kč",
+    "p1": "Nehtové rovnátko (titanová nit) je moderní metoda korekce tvaru nehtu, která pomáhá při zarůstajících, zakřivených nebo deformovaných nehtech. V ordinaci v centru Prahy posoudím stav nehtu a aplikuji titanovou nit pro postupné narovnání nehtové ploténky.",
+    "p2": "Ošetření je vhodné při opakovaném zarůstání nehtu, zakřiveném tvaru nehtu nebo při prevenci dalších potíží. Cílem je dlouhodobá korekce tvaru nehtu, úleva od obtíží a doporučení pro průběžnou péči mezi kontrolami.",
+    "whenToConsiderTitle": "Kdy zvážit nehtové rovnátko:",
+    "whenToConsider": {
+      "item1": "Opakované zarůstání nebo zakřivení nehtu",
+      "item2": "Bolest vlivem tlaku deformovaného nehtu",
+      "item3": "Nehet se zakřivuje do strany nebo dolů",
+      "item4": "Neúspěšné pokusy o domácí péči",
+      "item5": "Prevence dalších potíží s nehtem"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření nehtu a posouzení vhodnosti metody",
+      "item2": "Profesionální aplikaci titanové niti na nehtovou ploténku",
+      "item3": "Instrukce k domácí péči a průběžné kontrole",
+      "item4": "Doporučení dalšího postupu a plán následných kontrol"
+    },
+    "photo1": {
+      "alt": "Podolog aplikuje nehtové rovnátko metodou titanové niti v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
+  },
+  "sportsPage": {
+    "metaTitle": "Podologická pedikúra v Praze — Kochanova",
+    "metaDescription": "Profesionální podologická pedikúra v centru Prahy. Přístrojové ošetření nehtů a kůže chodidel s důrazem na zdraví a prevenci.",
+    "eyebrow": "Služby",
+    "title": "Podologická pedikúra v Praze",
+    "subtitle": "Odborná přístrojová pedikúra pro zdravé chodidla — komplexní ošetření nehtů a kůže s individuálním přístupem.",
+    "priceLabel": "Cena ošetření",
+    "price": "1 000 Kč",
+    "p1": "Podologická pedikúra je přístrojové ošetření chodidel zaměřené na zdraví nehtů a kůže. V ordinaci v centru Prahy provedu šetrnou pedikúru s důrazem na hygienu, prevenci potíží a estetický výsledek podle stavu vašich chodidel.",
+    "p2": "Ošetření je vhodné pro pravidelnou péči o chodidla, při suché kůži, zrohovatělých patách, otlacích i jako prevenci dalších podologických obtíží. Cílem je zdravá kůže, upravené nehty a doporučení pro domácí péči mezi návštěvami.",
+    "whenToConsiderTitle": "Kdy zvážit podologickou pedikúru:",
+    "whenToConsider": {
+      "item1": "Zrohovatělé paty nebo suchá popraskaná kůže",
+      "item2": "Nepravidelný tvar nebo délka nehtů",
+      "item3": "Pravidelná prevence otlaků a mozolů",
+      "item4": "Potřeba odborné péče místo kosmetické pedikúry",
+      "item5": "Celková únava a nepohodlí chodidel"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření stavu nehtů a kůže chodidel",
+      "item2": "Přístrojové ošetření nehtů a zrohovatělé kůže",
+      "item3": "Hydrataci a doporučení vhodných přípravků",
+      "item4": "Individuální rady k domácí péči a prevenci"
+    },
+    "photo1": {
+      "alt": "Podolog provádí podologickou pedikúru v ordinaci"
+    },
+    "bookCta": "Objednat pedikúru"
+  },
+  "kartPage": {
+    "metaTitle": "Kart pedikúra v Praze — Kochanova",
+    "metaDescription": "Profesionální KART pedikúra v centru Prahy. Specializované ošetření chodidel pro náročnější stavy nehtů a kůže s důrazem na prevenci.",
+    "eyebrow": "Služby",
+    "title": "Kart pedikúra v Praze",
+    "subtitle": "Specializovaná podologická pedikúra pro náročnější stavy chodidel — komplexní ošetření s individuálním přístupem a dlouhodobou péčí.",
+    "priceLabel": "Cena ošetření",
+    "price": "1 500 – 1 900 Kč",
+    "p1": "KART pedikúra je specializované ošetření chodidel určené pro náročnější stavy nehtů a kůže. V ordinaci v centru Prahy provedu podrobné vyšetření a aplikuji metody KART pedikúry s cílem obnovit zdraví chodidel a předcházet dalším potížím.",
+    "p2": "Ošetření je vhodné při opakovaných problémech s nehty, zrohovatělé kůži, otlacích nebo při potřebě hlubší podologické péče než u klasické pedikúry. Cílem je komplexní ošetření, zlepšení stavu chodidel a doporučení pro průběžnou domácí péči.",
+    "whenToConsiderTitle": "Kdy zvážit KART pedikúru:",
+    "whenToConsider": {
+      "item1": "Opakované problémy s nehty a kůží chodidel",
+      "item2": "Náročnější stavy než u běžné pedikúry",
+      "item3": "Hluboké otlaky nebo zrohovatělá kůže",
+      "item4": "Potřeba dlouhodobého plánu péče o chodidla",
+      "item5": "Chronické potíže s kůží nebo nehty"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Podrobné vyšetření nehtů a kůže chodidel",
+      "item2": "Specializované KART ošetření podle stavu chodidel",
+      "item3": "Odbornou péči o problematická místa a prevenci",
+      "item4": "Individuální plán domácí péče a doporučení dalšího postupu"
+    },
+    "photo1": {
+      "alt": "Podolog provádí KART pedikúru v ordinaci"
+    },
+    "bookCta": "Objednat pedikúru"
+  },
+  "aestheticPage": {
+    "metaTitle": "Ošetření plísně nehtu v Praze — Kochanova",
+    "metaDescription": "Profesionální ošetření plísně nehtu (onychomykóza) v centru Prahy. Diagnostika a léčba mykotických nehtů moderními metodami s doporučením prevence.",
+    "eyebrow": "Služby",
+    "title": "Ošetření plísně nehtu v Praze",
+    "subtitle": "Odborná diagnostika a léčba plísně nehtu — šetrné ošetření s cílem obnovit zdraví nehtu a předcházet opakování infekce.",
+    "priceLabel": "Cena ošetření",
+    "price": "350 – 500 Kč",
+    "p1": "Plíseň nehtu (onychomykóza) je běžné onemocnění, při kterém dochází ke změně barvy, struktury a tloušťky nehtu. V ordinaci v centru Prahy posoudím stav postiženého nehtu a navrhnu vhodný postup ošetření podle rozsahu a typu infekce.",
+    "p2": "Ošetření je vhodné při ztluštění, lámavosti, změně barvy nehtu či při opakovaných potížích, které neodpovídají na běžnou domácí péči. Cílem je odborná léčba, zlepšení vzhledu nehtu a doporučení, jak infekci předcházet v budoucnu.",
+    "whenToConsiderTitle": "Kdy zvážit ošetření plísně nehtu:",
+    "whenToConsider": {
+      "item1": "Změna barvy nebo ztluštění nehtu",
+      "item2": "Lámavost, křehkost nebo odlišný tvar nehtu",
+      "item3": "Nehet se olupuje nebo je matný",
+      "item4": "Domácí péče bez zlepšení stavu",
+      "item5": "Podezření na šíření infekce na další nehty"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření postiženého nehtu a okolní kůže",
+      "item2": "Odbornou diagnostiku plísňového onemocnění nehtu",
+      "item3": "Profesionální ošetření mykotických nehtů v sterilním prostředí",
+      "item4": "Doporučení domácí péče a prevence opakování infekce"
+    },
+    "photo1": {
+      "alt": "Podolog ošetřuje plíseň nehtu v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
+  },
+  "okluzePage": {
+    "metaTitle": "Okluze v Praze — Kochanova",
+    "metaDescription": "Profesionální okluzní terapie v centru Prahy. Odborné ošetření vybraných kožních a nehtových onemocnění pro zlepšení hojení a účinnosti léčby.",
+    "eyebrow": "Služby",
+    "title": "Okluze v Praze",
+    "subtitle": "Odborná okluzní terapie pro vybraná onemocnění chodidel — šetrné ošetření s cílem podpořit hojení a zlepšit výsledky léčby.",
+    "priceLabel": "Cena ošetření",
+    "price": "350 Kč",
+    "p1": "Okluze je terapeutická metoda, při které se na postižené místo aplikuje okluzní materiál pro podporu hojení a zvýšení účinnosti léčby. V ordinaci v centru Prahy posoudím vhodnost této metody a provedu odborné ošetření podle stavu kůže nebo nehtu.",
+    "p2": "Ošetření je vhodné při vybraných kožních a nehtových problémech, kde je vhodná okluzní terapie jako doplněk léčby. Cílem je podpořit regeneraci, zlepšit stav postiženého místa a doporučit další postup péče.",
+    "whenToConsiderTitle": "Kdy zvážit okluzi:",
+    "whenToConsider": {
+      "item1": "Vybrané kožní problémy vyžadující okluzní terapii",
+      "item2": "Potřeba podpořit hojení postiženého místa",
+      "item3": "Doporučení léčby zahrnující okluzní metodu",
+      "item4": "Problémy s nehtem nebo kůží vhodné pro okluzi",
+      "item5": "Potřeba zvýšit účinnost aplikované léčby"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření postiženého místa na chodidle nebo nehtu",
+      "item2": "Posouzení vhodnosti okluzní terapie",
+      "item3": "Profesionální aplikaci okluzního materiálu",
+      "item4": "Doporučení domácí péče a dalšího postupu léčby"
+    },
+    "photo1": {
+      "alt": "Podolog provádí okluzní terapii v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
+  },
+  "clipflowPage": {
+    "metaTitle": "Nadstavba nehtu Clip Flow v Praze — Kochanova",
+    "metaDescription": "Profesionální nadstavba nehtu systémem Clip Flow v centru Prahy. Obnova délky a tvaru nehtové ploténky s důrazem na zdraví nehtu.",
+    "eyebrow": "Služby",
+    "title": "Nadstavba nehtu Clip Flow v Praze",
+    "subtitle": "Odborná nadstavba nehtu systémem Clip Flow — šetrné řešení pro poškozené, krátké nebo deformované nehty.",
+    "priceLabel": "Cena ošetření",
+    "price": "120 Kč",
+    "p1": "Nadstavba nehtu Clip Flow je moderní metoda obnovy délky a tvaru nehtové ploténky pomocí speciálního systému. V ordinaci v centru Prahy posoudím stav nehtu a provedu profesionální nadstavbu s důrazem na zdraví a správnou funkci nehtu.",
+    "p2": "Ošetření je vhodné při poškozeném, krátkém nebo deformovaném nehtu, kde je potřeba doplnit délku či tvar nehtové ploténky. Cílem je estetická a funkční obnova nehtu, ochrana nehtového lůžka a doporučení pro další péči.",
+    "whenToConsiderTitle": "Kdy zvážit nadstavbu nehtu Clip Flow:",
+    "whenToConsider": {
+      "item1": "Poškozený, ulomený nebo příliš krátký nehet",
+      "item2": "Deformovaný tvar nehtové ploténky",
+      "item3": "Potřeba ochrany nehtového lůžka",
+      "item4": "Estetická i funkční obnova délky nehtu",
+      "item5": "Doplnění ošetření po traumatu nehtu"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření nehtu a posouzení vhodnosti nadstavby",
+      "item2": "Přípravu nehtové ploténky pro systém Clip Flow",
+      "item3": "Profesionální aplikaci nadstavby nehtu Clip Flow",
+      "item4": "Doporučení domácí péče a dalšího postupu ošetření"
+    },
+    "photo1": {
+      "alt": "Podolog provádí nadstavbu nehtu Clip Flow v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
+  },
+  "tamponadaPage": {
+    "metaTitle": "Tamponáda v Praze — Kochanova",
+    "metaDescription": "Profesionální tamponáda při ošetření zarostlého nehtu v centru Prahy. Ochrana postiženého místa, úleva od tlaku a podpora správného hojení.",
+    "eyebrow": "Služby",
+    "title": "Tamponáda v Praze",
+    "subtitle": "Odborná tamponáda při ošetření nehtu — šetrná metoda pro ochranu, úlevu od tlaku a podporu hojení.",
+    "priceLabel": "Cena ošetření",
+    "price": "60 Kč",
+    "p1": "Tamponáda je podologický výkon, při kterém se do prostoru pod nebo vedle nehtu aplikuje sterilní materiál pro ochranu postiženého místa a úlevu od tlaku. V ordinaci v centru Prahy provedu tamponádu šetrně a odborně podle stavu nehtu a okolní kůže.",
+    "p2": "Ošetření je vhodné při zarostlém nehtu, tlaku na okolní kůži nebo jako doplněk dalšího ošetření nehtu. Cílem je zmírnit obtíže, podpořit hojení a doporučit správnou domácí péči do další návštěvy.",
+    "whenToConsiderTitle": "Kdy zvážit tamponádu:",
+    "whenToConsider": {
+      "item1": "Tlak zarostlého nehtu na okolní kůži",
+      "item2": "Bolest a citlivost v okolí nehtu",
+      "item3": "Potřeba ochrany místa po ošetření nehtu",
+      "item4": "Doplněk k ošetření zarostlého nehtu",
+      "item5": "Podpora hojení do další návštěvy"
+    },
+    "includesTitle": "Co ošetření zahrnuje",
+    "includes": {
+      "item1": "Vyšetření postiženého nehtu a okolní kůže",
+      "item2": "Šetrnou přípravu místa pro tamponádu",
+      "item3": "Profesionální aplikaci sterilní tamponády",
+      "item4": "Doporučení domácí péče a dalšího postupu ošetření"
+    },
+    "photo1": {
+      "alt": "Podolog provádí tamponádu při ošetření nehtu v ordinaci"
+    },
+    "bookCta": "Objednat ošetření"
   },
   "stats": {
     "experience": "Let praxe",
@@ -110,10 +485,11 @@
     },
     "eyebrow": "O mně",
     "title": "Vaše pohoda je moje priorita",
-    "p1": "Jsem licencovaný podolog s více než 5 lety zkušeností v komplexní péči o nohy. Díky dalšímu vzdělávání a zájmu o podologii nabízím léčebné postupy podle nejnovějších poznatků.",
+    "p1": "Jsem licencovaná podoložka s více než 5 lety zkušeností v komplexní péči o nohy. Díky dalšímu vzdělávání a zájmu o podologii nabízím léčebné postupy podle nejnovějších poznatků.",
     "p2": "Věřím, že zdravé nohy jsou základem aktivního a naplňujícího života. Každý pacient dostane individuální plán péče podle svých potřeb.",
     "p3": "Ordinace je vybavena moderní technikou a dodržuji nejpřísnější hygienické standardy, abyste se při každé návštěvě cítili v bezpečí a pohodlně.",
     "p4": "Jsem certifikovanou členkou České podologické společnosti a České podiatrické společnosti",
+    "photoAlt": "Portrét podoložky Kochanova",
     "cpsLogoAlt": "Logo České podologické společnosti",
     "cpdrsLogoAlt": "Logo České podiatrické společnosti"
   },
@@ -127,14 +503,14 @@
   "contact": {
     "eyebrow": "Kontakt",
     "title": "Objednejte se na termín",
-    "subtitle": "Rád vám pomohu. Napište mi a ozvu se vám co nejdříve.",
+    "subtitle": "Ráda vám pomohu. Napište mi a ozvu se vám co nejdříve.",
     "phoneLabel": "Telefon",
     "emailLabel": "E-mail",
     "addressLabel": "Adresa",
     "instagramLabel": "Instagram",
     "phoneValue": "+420 777 828 296",
     "emailValue": "podolog.kochanova@gmail.com",
-    "addressValue": "Na Poříčí 1041/12, YMCA, Praha",
+    "addressValue": "Vodičkova 699/30, Praha",
     "instagramValue": "@podolog_kochanova",
     "fieldName": "Jméno",
     "fieldEmail": "E-mail",
@@ -148,11 +524,105 @@
     "copyright": "© 2026",
     "brandAccent": "Kochanova",
     "brandRest": "",
-    "rights": "Všechna práva vyhrazena."
+    "rights": "Všechna práva vyhrazena.",
+    "servicesLabel": "Služby"
+  },
+  "relatedServices": {
+    "title": "Další služby"
+  },
+  "a11y": {
+    "skipToContent": "Přeskočit na obsah",
+    "breadcrumb": "Drobečková navigace"
+  },
+  "reservationPage": {
+    "metaTitle": "Online rezervace — Podolog Kochanova Praha",
+    "metaDescription": "Objednejte se online na podologické ošetření v Praze. Vyberte termín konzultace nebo ošetření u Podolog Kochanova.",
+    "title": "Online rezervace termínu",
+    "breadcrumb": "Rezervace",
+    "iframeTitle": "Rezervační kalendář Podolog Kochanova"
+  },
+  "reservationSuccessPage": {
+    "metaTitle": "Rezervace potvrzena — Podolog Kochanova",
+    "metaDescription": "Vaše rezervace u Podolog Kochanova byla úspěšně odeslána. Těšíme se na vás v ordinaci v Praze.",
+    "breadcrumb": "Potvrzení rezervace",
+    "title": "Rezervace byla úspěšná",
+    "body": "Děkuji za objednání. Potvrzení termínu vám přijde e-mailem. Pokud se cokoliv změní, ozvěte se mi, ráda termín upravím.",
+    "homeCta": "Zpět na úvod",
+    "bookAnother": "Nová rezervace"
+  },
+  "cookies": {
+    "bannerTitle": "Používáme cookies",
+    "bannerBody": "Na těchto stránkách používáme cookies a podobné technologie. Některé jsou nutné k tomu, aby web fungoval. Ostatní — analytické, marketingové a preferenční — zapneme jen tehdy, když s tím budete souhlasit.",
+    "bannerLegalPrefix": "Podrobnosti najdete v",
+    "bannerLegalJoin": "a v",
+    "cookiePolicyLink": "Zásadách používání cookies",
+    "privacyPolicyLink": "Zásadách ochrany osobních údajů",
+    "acceptAll": "Povolit vše",
+    "rejectAll": "Odmítnout vše",
+    "settings": "Nastavení cookies",
+    "settingsTitle": "Nastavení cookies",
+    "settingsBody": "Vyberte, které kategorie chcete povolit. Nezbytné cookies jsou vždy zapnuté — bez nich by web nefungoval správně.",
+    "saveSettings": "Uložit nastavení",
+    "reopen": "Nastavení cookies",
+    "necessaryTitle": "Nezbytné cookies",
+    "necessaryBody": "Zajišťují základní funkce webu, například zapamatování vašeho souhlasu. Tyto cookies nelze vypnout.",
+    "analyticsTitle": "Analytické cookies",
+    "analyticsBody": "Pomáhají nám pochopit, jak stránky používáte, abychom je mohli zlepšovat. Bez vašeho souhlasu se nenačítají žádné měřicí skripty.",
+    "marketingTitle": "Marketingové cookies",
+    "marketingBody": "Slouží k měření kampaní a zobrazení relevantnějších informací. Bez vašeho souhlasu je nenačítáme.",
+    "preferencesTitle": "Preferenční cookies",
+    "preferencesBody": "Ukládají vaše volby, například vybraný jazyk, abyste je nemuseli nastavovat znovu."
+  },
+  "cookiePolicy": {
+    "metaTitle": "Zásady používání cookies — Podolog Kochanova",
+    "metaDescription": "Jak web Podolog Kochanova používá cookies a podobné technologie, jaké kategorie nabízíme a jak můžete svůj souhlas kdykoli změnit.",
+    "title": "Zásady používání cookies",
+    "updated": "Poslední aktualizace: 24. 8. 2026",
+    "intro": "Tyto zásady vysvětlují, jaké cookies a podobné technologie používáme na webu Podolog Kochanova, k čemu slouží a jak je můžete spravovat. Souhlas můžete kdykoli změnit přes odkaz Nastavení cookies v zápatí webu.",
+    "necessaryTitle": "Nezbytné cookies",
+    "necessaryBody": "Ukládáme záznam o vašem souhlasu (cookie podolog_consent a údaj v prohlížeči podolog-cookie-consent), abychom si pamatovali vaši volbu po dobu 6 měsíců a nenačítali nepovolené služby. Bez těchto údajů by lišta se souhlasem vyskakovala znovu při každé návštěvě.",
+    "analyticsTitle": "Analytické cookies",
+    "analyticsBody": "Pokud je povolíte, můžeme načíst měření návštěvnosti, například Google Analytics, a to pouze s vaším souhlasem. Tyto nástroje se nespustí dříve, než kliknete na Povolit vše nebo výslovně zapnete analytické cookies. Pokud analytický nástroj na webu aktuálně není nastavený, vaše volba se uloží a uplatní se, jakmile měření zapojíme.",
+    "marketingTitle": "Marketingové cookies",
+    "marketingBody": "Pokud je povolíte, můžeme načíst marketingové měření, například Meta Pixel. Bez souhlasu se tyto skripty nenačítají. Stejně jako u analytiky se volba uloží i v případě, že marketingový nástroj ještě není aktivní.",
+    "preferencesTitle": "Preferenční cookies",
+    "preferencesBody": "Když je povolíte, uložíme si váš jazyk webu (čeština nebo ruština) v prohlížeči, abyste ho nemuseli vybírat při každé návštěvě. Pokud je odmítnete, jazyk platí jen po dobu aktuální návštěvy.",
+    "thirdPartyTitle": "Služby třetích stran",
+    "thirdPartyBody": "Stránka rezervace načítá rezervační kalendář od společnosti Noona. Ten může nastavovat vlastní cookies, které spravuje poskytovatel služby, aby bylo možné vybrat termín. Odkazy na Instagram nebo telefonní hovory vedou mimo náš web a řídí se pravidly dané služby.",
+    "manageTitle": "Jak změnit volbu",
+    "manageBody": "Klikněte na Nastavení cookies v zápatí nebo na tlačítko v levém dolním rohu. Můžete povolit vše, odmítnout vše kromě nezbytných cookies, nebo vybrat kategorie zvlášť. Souhlas uchováváme 6 měsíců, poté se zeptáme znovu.",
+    "contactTitle": "Dotazy",
+    "contactBody": "Pokud máte k cookies otázky, napište na podolog.kochanova@gmail.com nebo zavolejte na +420 777 828 296.",
+    "privacyTitle": "Ochrana osobních údajů",
+    "privacyBody": "Informace o tom, kdo údaje spravuje a jaká máte práva, najdete v <privacy>Zásadách ochrany osobních údajů</privacy>."
+  },
+  "privacyPolicy": {
+    "metaTitle": "Zásady ochrany osobních údajů — Podolog Kochanova",
+    "metaDescription": "Jak Podolog Kochanova zpracovává osobní údaje návštěvníků webu a klientů, včetně rezervací, komunikace a cookies.",
+    "title": "Zásady ochrany osobních údajů",
+    "updated": "Poslední aktualizace: 24. 8. 2026",
+    "intro": "Tyto zásady popisují, jak zpracováváme osobní údaje, když navštívíte web Podolog Kochanova nebo se objednáte na ošetření. Píšeme je srozumitelně — pokud něco nebude jasné, ozvěte se, ráda to vysvětlím.",
+    "controllerTitle": "Kdo údaje spravuje",
+    "controllerBody": "Správcem údajů je Podolog Kochanova, ordinace na adrese Vodičkova 699/30, Praha.\nTelefon: +420 777 828 296\nE-mail: podolog.kochanova@gmail.com",
+    "dataTitle": "Jaké údaje zpracováváme",
+    "dataBody": "Přes web můžeme zpracovat údaje, které nám sami poskytnete při objednání nebo komunikaci: jméno, telefon, e-mail a informace k termínu. Web si také může uložit volbu cookies a jazyka. Zdravotní údaje z ošetření evidujeme v ordinaci, nikoli ve veřejné části tohoto webu.",
+    "purposesTitle": "Proč údaje zpracováváme",
+    "purposesBody": "Údaje používáme k vyřízení rezervace, komunikaci ohledně termínu, splnění právních povinností a — jen se souhlasem — k měření návštěvnosti nebo marketingu. Právním základem je plnění smlouvy nebo jednání o ní, oprávněný zájem na provozu webu a souhlas u volitelných cookies.",
+    "recipientsTitle": "Kdo k údajům může mít přístup",
+    "recipientsBody": "Rezervace probíhá přes službu Noona, která termíny zpracovává jako samostatný poskytovatel. Dále mohou údaje zpracovávat poskytovatel hostingu webu a — pouze se souhlasem — nástroje pro analytiku nebo marketing. Instagram využíváme jen pokud na něj sami kliknete.",
+    "retentionTitle": "Jak dlouho údaje uchováváme",
+    "retentionBody": "Údaje k rezervacím a péči uchováváme po dobu nutnou k poskytnutí služby a splnění zákonných povinností. Souhlas s cookies uchováváme 6 měsíců. Preferenci jazyka jen po dobu, než ji změníte nebo cookies odmítnete.",
+    "rightsTitle": "Vaše práva",
+    "rightsBody": "Máte právo na přístup k údajům, opravu, výmaz, omezení zpracování, námitku a přenositelnost tam, kde to zákon umožňuje. Souhlas s volitelnými cookies můžete kdykoli odvolat. Stížnost můžete podat u Úřadu pro ochranu osobních údajů (uoou.gov.cz).",
+    "cookiesTitle": "Cookies",
+    "cookiesBody": "Podrobnosti o cookies a podobných technologiích jsou v samostatných zásadách.",
+    "cookiesLink": "Přejít na <cookies>Zásady používání cookies</cookies>."
   },
   "notFound": {
     "title": "404",
     "message": "Jejda! Stránka nenalezena",
-    "homeLink": "Zpět na úvod"
+    "homeLink": "Zpět na úvod",
+    "metaTitle": "Stránka nenalezena — Podolog Kochanova",
+    "metaDescription": "Tato stránka na webu Podolog Kochanova neexistuje. Vraťte se na úvod nebo si vyberte službu v menu."
   }
 }

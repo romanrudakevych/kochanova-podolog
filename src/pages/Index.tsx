@@ -1,25 +1,27 @@
+import { lazy, Suspense } from "react";
 import Navbar from "@/components/NavBar";
 import HeroSection from "@/components/HeroSection";
-import HeroVideoSection from "@/components/HeroVideoSection";
 import ServicesSection from "@/components/ServicesSection";
 import StatsSection from "@/components/StatsSection";
 import AboutSection from "@/components/AboutSection";
-import CertificatesSection from "@/components/CertificatesSection";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import CarouselSection from "@/components/CarouselSection";
+
+const CertificatesSection = lazy(() => import("@/components/CertificatesSection"));
+const ContactSection = lazy(() => import("@/components/ContactSection"));
 
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
-    <HeroSection />
-    {/* <HeroVideoSection /> */}
-    <ServicesSection />
-    <StatsSection />
-    {/* <CarouselSection /> */}
-    <AboutSection />
-    <CertificatesSection />
-    <ContactSection />
+    <main id="main-content">
+      <HeroSection />
+      <ServicesSection />
+      <StatsSection />
+      <AboutSection />
+      <Suspense fallback={null}>
+        <CertificatesSection />
+        <ContactSection />
+      </Suspense>
+    </main>
     <Footer />
   </div>
 );

@@ -1,22 +1,77 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
-const certificateImages = Object.entries(
-  import.meta.glob<string>("@/assets/certificates/*.webp", {
-    eager: true,
-    import: "default",
-  }),
-)
-  .sort(([a], [b]) => a.localeCompare(b))
-  .map(([, url]) => url);
+const thumbModules = import.meta.glob<string>("@/assets/certificates/thumbs/*.webp", {
+  import: "default",
+});
+
+const fullModules = import.meta.glob<string>("@/assets/certificates/certificate-*.webp", {
+  import: "default",
+});
+
+type CertificateEntry = {
+  thumb: string;
+  fullLoader: () => Promise<string>;
+};
+
+function thumbPathToFullPath(thumbPath: string) {
+  return thumbPath.replace("/thumbs/", "/");
+}
 
 const CertificatesSection = () => {
   const { t } = useTranslation();
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [certificates, setCertificates] = useState<CertificateEntry[]>([]);
+  const [selectedSrc, setSelectedSrc] = useState<string | null>(null);
 
-  const selectedSrc = selectedIndex !== null ? certificateImages[selectedIndex] : null;
+  useEffect(() => {
+    let cancelled = false;
+
+    void (async () => {
+      const entries = await Promise.all(
+        Object.entries(thumbModules)
+          .sort(([a], [b]) => a.localeCompare(b))
+          .map(async ([thumbPath, loadThumb]) => {
+            const fullPath = thumbPathToFullPath(thumbPath);
+            const loadFull = fullModules[fullPath];
+            const thumb = await loadThumb();
+            return {
+              thumb,
+              fullLoader: loadFull ?? (async () => thumb),
+            };
+          }),
+      );
+
+      if (!cancelled) {
+        setCertificates(entries);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (selectedIndex === null) {
+      setSelectedSrc(null);
+      return;
+    }
+
+    let cancelled = false;
+    const entry = certificates[selectedIndex];
+    if (!entry) return;
+
+    void entry.fullLoader().then((full) => {
+      if (!cancelled) setSelectedSrc(full);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedIndex, certificates]);
 
   return (
     <section id="certificates" className="relative py-24 overflow-hidden">
@@ -42,18 +97,20 @@ const CertificatesSection = () => {
           className="flex flex-row flex-wrap justify-center gap-4 overflow-x-auto pb-2"
           aria-label={t("certificates.listLabel")}
         >
-          {certificateImages.map((src, index) => (
+          {certificates.map(({ thumb }, index) => (
             <button
-              key={src}
+              key={thumb}
               type="button"
               onClick={() => setSelectedIndex(index)}
               className="glass-panel p-2 md:p-3 shrink-0 min-w-[160px] sm:min-w-[200px] flex-1 max-w-[240px] text-left cursor-pointer hover:ring-1 hover:ring-primary/30 transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               aria-label={t("certificates.openCertificate", { number: index + 1 })}
             >
               <img
-                src={src}
+                src={thumb}
                 alt=""
                 aria-hidden
+                width={320}
+                height={427}
                 className="w-full rounded-lg object-cover aspect-[3/4] bg-muted pointer-events-none"
                 loading="lazy"
                 decoding="async"
