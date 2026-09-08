@@ -1,5 +1,4 @@
 import { lazy, Suspense } from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
@@ -32,47 +31,43 @@ const CookiePolicy = lazy(() => import("./pages/CookiePolicy.tsx"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.tsx"));
 const ReservationSuccess = lazy(() => import("./pages/ReservationSuccess.tsx"));
 
-const queryClient = new QueryClient();
-
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <DocumentLang />
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ConsentProvider>
-          <PersistLocalePreference />
-          <SkipToContent />
-          <SeoHead />
-          <AnalyticsPageViews />
-          <CookieConsent />
-          <ScrollToTop />
-          <Suspense fallback={null}>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/rezervace" element={<Reservation />} />
-              <Route path={RESERVATION_SUCCESS_PATH} element={<ReservationSuccess />} />
-              <Route path="/podologicka-konzultace-praha" element={<PodologicConsultation />} />
-              <Route path="/zarostly-nehet-praha" element={<IngrownNailTreatment />} />
-              <Route path="/bradavice-praha" element={<WartTreatment />} />
-              <Route path="/kuri-oko-praha" element={<CornTreatment />} />
-              <Route path="/plisen-nehtu-praha" element={<NailFungusTreatment />} />
-              <Route path="/nehtove-rovnatko-praha" element={<NailBraceTreatment />} />
-              <Route path="/podologicka-pedikura-praha" element={<PodologicPedicure />} />
-              <Route path="/kart-pedikura-praha" element={<KartPedicure />} />
-              <Route path="/okluze" element={<OkluzeTreatment />} />
-              <Route path="/nadstavba-nehtu" element={<NailExtensionClipFlow />} />
-              <Route path="/tamponada" element={<TamponadeTreatment />} />
-              <Route path={COOKIE_POLICY_PATH} element={<CookiePolicy />} />
-              <Route path={PRIVACY_POLICY_PATH} element={<PrivacyPolicy />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
-        </ConsentProvider>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <TooltipProvider>
+    <DocumentLang />
+    <Toaster />
+    <Sonner />
+    <BrowserRouter>
+      <ConsentProvider>
+        <PersistLocalePreference />
+        <SkipToContent />
+        <SeoHead />
+        <AnalyticsPageViews />
+        <CookieConsent />
+        <ScrollToTop />
+        <Suspense fallback={null}>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/rezervace" element={<Reservation />} />
+            <Route path={RESERVATION_SUCCESS_PATH} element={<ReservationSuccess />} />
+            <Route path="/podologicka-konzultace-praha" element={<PodologicConsultation />} />
+            <Route path="/zarostly-nehet-praha" element={<IngrownNailTreatment />} />
+            <Route path="/bradavice-praha" element={<WartTreatment />} />
+            <Route path="/kuri-oko-praha" element={<CornTreatment />} />
+            <Route path="/plisen-nehtu-praha" element={<NailFungusTreatment />} />
+            <Route path="/nehtove-rovnatko-praha" element={<NailBraceTreatment />} />
+            <Route path="/podologicka-pedikura-praha" element={<PodologicPedicure />} />
+            <Route path="/kart-pedikura-praha" element={<KartPedicure />} />
+            <Route path="/okluze" element={<OkluzeTreatment />} />
+            <Route path="/nadstavba-nehtu" element={<NailExtensionClipFlow />} />
+            <Route path="/tamponada" element={<TamponadeTreatment />} />
+            <Route path={COOKIE_POLICY_PATH} element={<CookiePolicy />} />
+            <Route path={PRIVACY_POLICY_PATH} element={<PrivacyPolicy />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </ConsentProvider>
+    </BrowserRouter>
+  </TooltipProvider>
 );
 
 export default App;

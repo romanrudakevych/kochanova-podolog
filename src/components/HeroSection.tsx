@@ -55,6 +55,8 @@ const HeroSection = () => {
               <div className="overflow-hidden rounded-xl aspect-square sm:aspect-[4/3] lg:aspect-square">
                 <img
                   src={heroImg}
+                  srcSet="/images/hero-480.webp 480w, /images/hero-640.webp 640w, /images/hero.webp 840w"
+                  sizes="(min-width: 1024px) 45vw, (min-width: 640px) 90vw, 404px"
                   alt={t("hero.heroImageAlt")}
                   width={840}
                   height={840}
