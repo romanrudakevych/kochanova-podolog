@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="470" viewBox="0 0 1160 470">
+<rect width="1160" height="470" fill="#f1f3f4"/>
+<text x="40" y="52" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#202124">Lighthouse 12 — podolog-kochanova.cz</text>
+<text x="40" y="78" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#5f6368">Production build, gzip, realistic latency. Accessibility was out of scope for this run.</text>
+<rect x="40" y="105" width="540" height="205" rx="12" fill="#ffffff" stroke="#dadce0"/><text x="60" y="135" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#202124">Desktop</text>
+  <circle cx="130" cy="220" r="47" fill="rgba(12,206,107,0.12)"/>
+  <circle cx="130" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-opacity="0.25" stroke-width="6"/>
+  <circle cx="130" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-width="6" stroke-linecap="round"
+          stroke-dasharray="295.31 0.00" transform="rotate(-90 130 220)"/>
+  <text x="130" y="233" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="38" fill="#0cce6b">100</text>
+  <text x="130" y="301" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#3c4043">Performance</text>
+  <circle cx="305" cy="220" r="47" fill="rgba(12,206,107,0.12)"/>
+  <circle cx="305" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-opacity="0.25" stroke-width="6"/>
+  <circle cx="305" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-width="6" stroke-linecap="round"
+          stroke-dasharray="295.31 0.00" transform="rotate(-90 305 220)"/>
+  <text x="305" y="233" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="38" fill="#0cce6b">100</text>
+  <text x="305" y="301" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#3c4043">Best Practices</text>
+  <circle cx="480" cy="220" r="47" fill="rgba(12,206,107,0.12)"/>
+  <circle cx="480" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-opacity="0.25" stroke-width="6"/>
+  <circle cx="480" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-width="6" stroke-linecap="round"
+          stroke-dasharray="295.31 0.00" transform="rotate(-90 480 220)"/>
+  <text x="480" y="233" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="38" fill="#0cce6b">100</text>
+  <text x="480" y="301" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#3c4043">SEO</text>
+<rect x="580" y="105" width="540" height="205" rx="12" fill="#ffffff" stroke="#dadce0"/><text x="600" y="135" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#202124">Mobile</text>
+  <circle cx="670" cy="220" r="47" fill="rgba(12,206,107,0.12)"/>
+  <circle cx="670" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-opacity="0.25" stroke-width="6"/>
+  <circle cx="670" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-width="6" stroke-linecap="round"
+          stroke-dasharray="289.40 5.91" transform="rotate(-90 670 220)"/>
+  <text x="670" y="233" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="38" fill="#0cce6b">98</text>
+  <text x="670" y="301" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#3c4043">Performance</text>
+  <circle cx="845" cy="220" r="47" fill="rgba(12,206,107,0.12)"/>
+  <circle cx="845" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-opacity="0.25" stroke-width="6"/>
+  <circle cx="845" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-width="6" stroke-linecap="round"
+          stroke-dasharray="295.31 0.00" transform="rotate(-90 845 220)"/>
+  <text x="845" y="233" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="38" fill="#0cce6b">100</text>
+  <text x="845" y="301" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#3c4043">Best Practices</text>
+  <circle cx="1020" cy="220" r="47" fill="rgba(12,206,107,0.12)"/>
+  <circle cx="1020" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-opacity="0.25" stroke-width="6"/>
+  <circle cx="1020" cy="220" r="47" fill="none" stroke="#0cce6b" stroke-width="6" stroke-linecap="round"
+          stroke-dasharray="295.31 0.00" transform="rotate(-90 1020 220)"/>
+  <text x="1020" y="233" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="38" fill="#0cce6b">100</text>
+  <text x="1020" y="301" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#3c4043">SEO</text>
+<text x="40" y="358" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#202124">Mobile metrics</text>
+<rect x="24" y="372" width="1112" height="95" rx="12" fill="#ffffff" stroke="#dadce0"/>
+<text x="40" y="400" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#5f6368">First Contentful Paint</text>
+  <text x="40" y="427" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#0cce6b">1.0 s</text><text x="257" y="400" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#5f6368">Speed Index</text>
+  <text x="257" y="427" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#0cce6b">1.0 s</text><text x="474" y="400" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#5f6368">Largest Contentful Paint</text>
+  <text x="474" y="427" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#0cce6b">2.3 s</text><text x="691" y="400" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#5f6368">Total Blocking Time</text>
+  <text x="691" y="427" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#0cce6b">0 ms</text><text x="908" y="400" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#5f6368">Cumulative Layout Shift</text>
+  <text x="908" y="427" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#0cce6b">0</text>
+</svg>
