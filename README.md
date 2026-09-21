@@ -34,6 +34,23 @@ Podolog Kochanova uses the following technologies:
 - A custom Vite plugin (`vite-plugin-seo.ts`) for prerendering, sitemap, robots, and gtag injection
 - [Vitest](https://vitest.dev/) + [Testing Library](https://testing-library.com/) for testing
 
+
+## Lighthouse
+
+![Lighthouse scores](/docs/lighthouse.png)
+
+Measured with Lighthouse 12 against a production build served over gzip with realistic latency. Accessibility was out of scope for that run, so it is not reported here.
+
+| Category       | Desktop | Mobile |
+| -------------- | ------- | ------ |
+| Performance    | 100     | 98     |
+| Best Practices | 100     | 100    |
+| SEO            | 100     | 100    |
+
+Mobile Core Web Vitals: **FCP 1.0s · Speed Index 1.0s · LCP 2.3s · TBT 0ms · CLS 0**.
+
+> Do not measure with `npm run preview` on localhost. `vite preview` serves uncompressed, and Lighthouse's default simulated (Lantern) throttling is pathologically pessimistic against a zero-latency loopback — it reported Performance ~84 with FCP 2.7s where the *observed* FCP was 60ms. Use `--throttling-method=devtools`, a gzipping server with a small artificial latency, or Google's PageSpeed Insights against the deployed site.
+
 ## Getting Started
 
 ### Prerequisites
@@ -86,22 +103,6 @@ npm run lint       # run ESLint
 npm test           # run Vitest once
 npm run test:watch # run Vitest in watch mode
 ```
-
-## Lighthouse
-
-![Lighthouse scores](/docs/lighthouse.png)
-
-Measured with Lighthouse 12 against a production build served over gzip with realistic latency. Accessibility was out of scope for that run, so it is not reported here.
-
-| Category       | Desktop | Mobile |
-| -------------- | ------- | ------ |
-| Performance    | 100     | 98     |
-| Best Practices | 100     | 100    |
-| SEO            | 100     | 100    |
-
-Mobile Core Web Vitals: **FCP 1.0s · Speed Index 1.0s · LCP 2.3s · TBT 0ms · CLS 0**.
-
-> Do not measure with `npm run preview` on localhost. `vite preview` serves uncompressed, and Lighthouse's default simulated (Lantern) throttling is pathologically pessimistic against a zero-latency loopback — it reported Performance ~84 with FCP 2.7s where the *observed* FCP was 60ms. Use `--throttling-method=devtools`, a gzipping server with a small artificial latency, or Google's PageSpeed Insights against the deployed site.
 
 ### Deployment
 
